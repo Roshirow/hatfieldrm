@@ -7,3 +7,35 @@ overflow: hidden;
 color: #fff;
 background-color: #000;
 }
+
+/* If the screen size is 600px or less */
+@media only screen and (max-width: 380px) {
+h1{
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 108px;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+}
