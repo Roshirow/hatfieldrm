@@ -151,3 +151,51 @@ li{
 li.fade {
     opacity:1;
 }
+.one img{
+    width:62px; 
+    height:62px; 
+    left: 96px; 
+    top: 84px; 
+    position:absolute;
+}
+.one a {
+    left: 127px;
+    top: 52px;
+    position:absolute;
+}
+.two img{
+    width:62px; 
+    height:62px;
+    left: 195px; 
+    top: 180px; 
+    position:absolute;
+}
+.two a{
+    position:absolute; 
+    left:250px; 
+    top:165px;
+}
+.three img{
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 195px;
+    top: 419px;
+}
+.three a{
+    position:absolute; 
+    left: 250px;
+    top: 466px;
+}
+.four img{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 91px;
+    top: 513px;
+}
+.four a{
+    position:absolute; 
+    left: 127px;
+    top: 575px;
+}
