@@ -103,6 +103,7 @@ p{
     left:10px;
     top:18px;
     cursor:pointer;
+    z-index:2;
 }
 .line {
     width:30px;
@@ -113,19 +114,40 @@ p{
 }
 li a {
     text-decoration: none;
-    list-style: none;
+}
+li{
+    margin-left: 50%;
+    list-style:none;
 }
 .nav-links {
-    position:fixed;
-    background:blue;
+    display:flex;
+    justify-content: space-around;
+    background:rgba(37, 37, 173, 0.096);
     height:100vh;
     width:100%;
     flex-direction:column;
-    clip-path: circle(50px at 20% 20%);
-    -webkit-clip-path: circle(50px at 20% 20%);
+    clip-path: circle(0px at -20% -20%);
+    -webkit-clip-path: circle(0px at -20% -20%);
     transition: all 1s ease-out;
+    pointer-events: none;
 }
 .nav-links.open {
-    clip-path: circle(50px at 20% 20%);
-    -webkit-clip-path: circle(50px at 20% 20%);
+    clip-path: circle(400px at 0% 50%);
+    -webkit-clip-path: circle(400px at 0% 50%);
+    pointer-events: all;
+}
+.nav-links li{
+    opacity:0;
+}
+.nav-links li:nth-child(1) {
+    transition: all 0.5s ease o.2s;
+}
+.nav-links li:nth-child(2) {
+    transition: all 0.5s ease o.4s;
+}
+.nav-links li:nth-child(3) {
+    transition: all 0.5s ease o.6s;
+}
+li.fade {
+    opacity:1;
 }
