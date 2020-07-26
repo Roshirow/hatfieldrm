@@ -12,8 +12,8 @@ color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);
 }
 
-/* If the screen size is 600px or less */
-@media only screen and (max-width: 380px) {
+/* If the screen size is 360px or less */
+@media only screen and (max-width: 360px) {
 h1{
     font-family: 'Reem Kufi', sans-serif;
     font-style: normal;
@@ -155,47 +155,135 @@ li.fade {
     width:62px; 
     height:62px; 
     left: 96px; 
-    top: 84px; 
+    top: 172px; 
     position:absolute;
 }
 .one a {
     left: 127px;
-    top: 52px;
+    top: 140px;
     position:absolute;
 }
 .two img{
     width:62px; 
     height:62px;
     left: 195px; 
-    top: 180px; 
+    top: 268px; 
     position:absolute;
 }
 .two a{
     position:absolute; 
     left:250px; 
-    top:165px;
+    top:250px;
 }
 .three img{
     position: absolute;
     width: 62px;
     height: 62px;
-    left: 195px;
-    top: 419px;
+    left: 185px;
+    top: 507px;
 }
 .three a{
     position:absolute; 
     left: 250px;
-    top: 466px;
+    top: 550px;
 }
 .four img{
     position: absolute;
     width: 72px;
     height: 72px;
-    left: 91px;
-    top: 513px;
+    left: 81px;
+    top: 658px;
 }
 .four a{
     position:absolute; 
-    left: 127px;
-    top: 575px;
+    left: 137px;
+    top: 723px;
+}
+/*MAIN*/
+main img{
+    position:absolute;
+    width: 185px;
+    height: 187px;
+    left: calc(50% - 276px/2);
+    top: calc(50% - 193px/2 - 0.5px);
+    display:flex;
+    text-align: center;
+    align-items:center;
+    opacity:1;
+    animation-name: fadeIn3;
+    animation-duration: 12s;
+}
+@keyframes fadeIn3 {
+    0% {
+        opacity:0;
+    }
+    65%{
+        opacity:0;
+    }
+    68%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/*FAIRY ANIMATION*/
+.animate__animated .animate__fly #fairy{
+	position:absolute;
+    z-index:3;
+	transform:translate(-50%, -50%);
+	animation:fly 6s cubic-bezier(.23,.93,.66,.42)  infinite;
+}
+#fairy{
+    width:20%;
+    top:20%;
+    left:70%;
+	position:absolute;
+    z-index:3;
+	transform:translate(-50%, -50%);
+	animation:fly 6s cubic-bezier(.23,.93,.66,.42)  infinite;
+}
+@keyframes fly{
+	0%{
+		
+	}
+	30%{
+		transform:translate(-50%, -40%);
+			transform:translateX(-70%);
+	}
+	50%{
+		transform:translate(-50%, -60%);
+		transform:translate(10%,50%);
+	}
+	100%{
+		transform:translate(-50%, -40%);
+		transform:translate(-50%, -50%);
+	}
+}
+.cls-1{
+	animation:pulsing 1s infinite;
+}
+@keyframes pulsing{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.06,1.06);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+.fairy{
+	padding:20px;
+	animation:tada 3s cubic-bezier(.23,.93,.66,.42) infinite;
+}
+.cls-6,
+.cls-7{
+		animation:flash 1.9s cubic-bezier(.23,.93,.66,.42) infinite;
+}
+.cls-8,
+.cls-9,
+.cls-10{
+	animation:flash 2s cubic-bezier(.23,.93,.66,.42) infinite;
 }
