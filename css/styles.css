@@ -236,7 +236,7 @@ main img{
 }
 #fairy{
     width:20%;
-    top:20%;
+    top:35%;
     left:70%;
 	position:absolute;
     z-index:3;
@@ -274,9 +274,12 @@ main img{
 		transform:scaleX(1);
 	}
 }
-.fairy{
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
 	padding:20px;
-	animation:tada 3s cubic-bezier(.23,.93,.66,.42) infinite;
+	animation:shakeY 1s infinite;
 }
 .cls-6,
 .cls-7{
