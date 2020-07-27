@@ -9,3 +9,8 @@ hamburger.addEventListener('click', () => {
         link.classList.toggle('fade');
     });
 });
+
+// LIGHT GALLERY
+$('#gallery-1').lightGallery({
+    selector: 'a',
+});

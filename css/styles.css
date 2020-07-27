@@ -1,15 +1,26 @@
-*{
+html{
     margin:0;
     padding:0;
-}
-body,
-html{
-    width:100%;
+    scroll-behavior: smooth;
 }
 body{
-overflow: hidden;
 color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);
+}
+#gallery-1 {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#gallery-1 img{
+	width:100%;
+	height:auto;
+	margin:20px;
+}
+#gallery-1 a{
+	background:black;
 }
 
 /* If the screen size is 360px or less */
@@ -44,61 +55,11 @@ p{
     font-size: 14px;
     line-height: 17px;
 }
-}
-
-/*LANDING PAGES */
-.banner{
+/*NAVIGATION BAR screen size 360px or less*/
+nav {
     position:absolute;
-    width:276px;
-    height:193px;
-    left: calc(50% - 276px/2);
-    top: calc(50% - 193px/2 - 0.5px);
-    display:flex;
-    text-align: center;
-    align-items:center;
-    opacity:0;
-    animation-name: fadeIn;
-    animation-duration: 4s;
+    z-index:5;
 }
-.banner2{
-    position:absolute;
-    width:276px;
-    height:193px;
-    left: calc(50% - 276px/2);
-    top: calc(50% - 193px/2 - 0.5px);
-    display:flex;
-    text-align: center;
-    align-items:center;
-    opacity:0;
-    animation-name: fadeIn2;
-    animation-duration: 4s;
-    animation-delay: 4s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity:0;
-    }
-    80% {
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-    }
-}
-@keyframes fadeIn2 {
-    0% {
-        opacity:0;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-/*NAVIGATION BAR*/
 .hamburger{
     left:10px;
     top:18px;
@@ -118,6 +79,10 @@ li a {
 li{
     margin-left: 50%;
     list-style:none;
+}
+.nav-links a:hover {
+    color: rgb(14, 81, 104);
+    font-size:26px;
 }
 .nav-links {
     display:flex;
@@ -199,8 +164,62 @@ li.fade {
     left: 137px;
     top: 723px;
 }
+}
+
+/*LANDING PAGES */
+.banner{
+    position:absolute;
+    width:276px;
+    height:193px;
+    left: calc(50% - 276px/2);
+    top: calc(50% - 193px/2 - 0.5px);
+    display:flex;
+    text-align: center;
+    align-items:center;
+    opacity:0;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+.banner2{
+    position:absolute;
+    width:276px;
+    height:193px;
+    left: calc(50% - 276px/2);
+    top: calc(50% - 193px/2 - 0.5px);
+    display:flex;
+    text-align: center;
+    align-items:center;
+    opacity:0;
+    animation-name: fadeIn2;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    80% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes fadeIn2 {
+    0% {
+        opacity:0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
 /*MAIN*/
-main img{
+#rh{
     position:absolute;
     width: 185px;
     height: 187px;
@@ -279,7 +298,7 @@ main img{
 .cls-4,
 .cls-5 {
 	padding:20px;
-	animation:shakeY 1s infinite;
+	animation:shakeY 0.1s infinite;
 }
 .cls-6,
 .cls-7{
