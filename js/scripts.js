@@ -14,3 +14,4 @@ hamburger.addEventListener('click', () => {
 $('#gallery-1').lightGallery({
     selector: 'a',
 });
+
