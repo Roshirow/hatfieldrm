@@ -47,8 +47,18 @@
          </ul>
     </nav>
  
+    <h2 id="beer">Beer Box Packaging</h2>
 
-    
+    <div class="box_image">
+ <img src="/img/packageimage.jpg" alt="Beer Box Packaging Image" id="box">
+
+        <img id="heartlike" src="/img/heartlike.png" alt="filled white">
+
+       <img id="heartclick" src="/img/heartclick.png" alt="filled heart">
+
+</div>
+
+
     <!-- jQuery Library via CDN -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -62,5 +72,13 @@
 
     <script src="/js/scripts.js"></script>
 
+<script>
+$(document).ready(function() {
+    $('#heartlike').click(function() {
+        $('#heartlike').fadeOut();
+    });
+});
+
+</script>
 </body>
 </html>

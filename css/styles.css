@@ -5,7 +5,7 @@ html{
 }
 body{
 color: rgb(255, 255, 255);
-background-color:black;
+background-color:rgb(253, 206, 206);
 }
 
 /* If the screen size is 360px or less */
@@ -16,7 +16,7 @@ h1{
     font-weight: normal;
     font-size: 72px;
     line-height: 108px;
-    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 4px 4px rgba(255, 145, 145, 0.3);
 }
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -50,25 +50,26 @@ p{
 .line {
     width:30px;
     height:3px;
-    background:rgb(59, 59, 59);
+    background:rgb(255, 255, 255);
     margin:5px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    box-shadow:0px 4px 4px rgba(255, 145, 145, 0.3);
 }
 li a {
     text-decoration: none;
+    color:rgb(248, 178, 178);
 }
 li{
     margin-left: 50%;
     list-style:none;
 }
 .nav-links a:hover {
-    color: rgb(14, 81, 104);
+    color: rgb(252, 167, 167);
     font-size:26px;
 }
 .nav-links {
     display:flex;
     justify-content: space-around;
-    background:rgb(26, 1, 59);
+    background:rgb(248, 234, 234);
     height:100vh;
     width:100%;
     flex-direction:column;
@@ -262,7 +263,7 @@ li.fade {
 		transform:translate(-50%, -50%);
 	}
 }
-.cls-1{
+#fairy .cls-1{
 	animation:pulsing 1s infinite;
 }
 @keyframes pulsing{
@@ -276,8 +277,8 @@ li.fade {
 		transform:scaleX(1);
 	}
 }
-.cls-2,
-.cls-3,
+#fairy .cls-2,
+#fairy .cls-3,
 .cls-4,
 .cls-5 {
 	padding:20px;
@@ -297,7 +298,18 @@ li.fade {
     text-align:center;
 }
 #about_projects img:hover{
-    width:110%;
+	animation:pulse 1s;
+}
+@keyframes pulse{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
 }
 #about_projects {
     position:absolute;
@@ -310,16 +322,16 @@ li.fade {
 	width:100%;
 	height:auto;
     margin:20px;
-    border: 2px solid black;
+    border: 2px solid rgb(248, 178, 178);
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
     border-radius: 8px;
 }
 #about_projects a{
-	background:black;
+
 }
 #gallery-1 img{
     width:30vw;
-    border: 3px solid black;
+    border: 2px solid rgb(248, 178, 178);
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.3));
     border-radius: 10px;
 }
@@ -328,3 +340,37 @@ li.fade {
     justify-content: space-evenly;
 }
 /*BEER BOX PROJECT PAGE*/
+#beer{
+    color:rgb(231, 141, 156);
+    position: absolute;
+    z-index:3;
+    width: 226px;
+    height: 81px;
+    left: 113px;
+    top: 22px;
+    text-align: right;
+}
+.box_image #box {
+    position: absolute;
+    z-index:1;
+    width: 364px;
+    height: 239px;
+    left: 0px;
+    top: 94px;
+}
+#heartlike {
+    position: absolute;
+    z-index:3;
+    width: 51px;
+    height: 51px;
+    left: 19px;
+    top: 275px;
+}
+#heartclick {
+    position:absolute;
+    z-index:2;
+    width: 51px;
+    height: 51px;
+    left: 19px;
+    top: 275px;
+}
