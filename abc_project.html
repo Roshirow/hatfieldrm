@@ -47,7 +47,28 @@
          </ul>
     </nav>
  
+    <h2 id="book_project">ABC Book <br> Project</h2>
 
+    <div class="cover_image">
+ <img src="/img/cover.jpg" alt="abc book cover" id="cover">
+
+        <img id="heartlike" src="/img/heartlike.png" alt="filled white">
+
+       <img id="heartclick" src="/img/heartclick.png" alt="filled heart">
+
+</div>
+
+<p id="book_description">An unusual alphabet book directed toward beginners. The abc's, simple concept, with biochemistry terms and definition. </p>
+
+<p id="read_more">Read More</p>
+
+<div id="line"></div>
+
+<img id="l" src="/img/letter L.jpg" alt="Letter L drawing">
+
+<img id="letter" src="/img/abc book-Grid_Layout30.jpg" alt="book page 1">
+
+<img id="letter2" src="/img/abc book-Grid_Layout29.jpg" alt="book page 2">
 
 <!-- jQuery Library via CDN -->
 
@@ -62,5 +83,13 @@
 
     <script src="/js/scripts.js"></script>
 
+<script>
+$(document).ready(function() {
+    $('#heartlike').click(function() {
+        $('#heartlike').fadeOut();
+    });
+});
+
+</script>
 </body>
 </html>

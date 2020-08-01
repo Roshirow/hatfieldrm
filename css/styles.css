@@ -389,7 +389,6 @@ li.fade {
     height: 32px;
     left: 226px;
     top: 412px;
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -436,3 +435,49 @@ li.fade {
     top: 498px;
 }
 /*ABC BOOK PROJECT PAGE*/
+#book_project{
+    color:rgb(231, 141, 156);
+    position: absolute;
+    z-index:3;
+    width: 226px;
+    height: 81px;
+    left: 113px;
+    top: 22px;
+    text-align: right;
+}
+#cover {
+    position: absolute;
+    width: 364px;
+    height: 239px;
+    left: 0px;
+    top: 94px;
+}
+#book_description{
+    color: rgb(231, 141, 156);
+    position: absolute;
+    width: 314px;
+    height: 60px;
+    left: 24px;
+    top: 360px;
+}
+#l{
+    position: absolute;
+    width: 71px;
+    height: 64px;
+    left: 144px;
+    top: 466px;
+}
+#letter{
+    position: absolute;
+    width: 122px;
+    height: 135px;
+    left: 10px;
+    top: 487px;
+}
+#letter2{
+    position: absolute;
+    width: 111px;
+    height: 124px;
+    left: 224px;
+    top: 498px;
+}
