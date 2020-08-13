@@ -614,3 +614,15 @@ html{
     position: absolute;
     left:76%;
 }
+#city{
+    width:100%;
+}
+.contact {
+    display:flex;
+    justify-content: center;
+}
+.contact h1{
+    z-index:2;
+    position:absolute;
+    text-align: center;
+}
