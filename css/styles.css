@@ -2,6 +2,7 @@ html{
     margin:0;
     padding:0;
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 body{
 color: rgb(255, 255, 255);
@@ -557,11 +558,12 @@ html{
 .about_me{
     display:flex;
     margin-top: 90px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .about_box{
+    margin-top:90px;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .box-1{
     float:left;
@@ -589,19 +591,15 @@ html{
     background-image: linear-gradient(to bottom, rgba(252, 165, 84,0.3) 0%, rgba(255, 125, 180,0.3) 100%);
     border-radius: 90px;
 }
-.box-2 h1,
-.box-2 p,
 .box-2 #splash{
-    float:right;
-    margin:20px;
-}
-.box-2 #splash{
-    width:20vw;
-    z-index:-1;
+    width:40vw;
+    left:61%;
     position:absolute;
+    top:103%;
+    height:60vh;
 }
 .box-1 img{
-    width:30vw;
+    width:47vw;
 }
 .box-2 h1{
     text-align: right;
@@ -614,4 +612,5 @@ html{
     flex-direction: column;
     z-index: 2;
     position: absolute;
+    left:76%;
 }
