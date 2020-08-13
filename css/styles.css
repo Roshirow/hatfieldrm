@@ -5,7 +5,6 @@ html{
 }
 body{
 color: rgb(255, 255, 255);
-background-color:rgb(253, 206, 206);
 }
 
 /* If the screen size is 360px or less */
@@ -148,8 +147,6 @@ li.fade {
     left: 137px;
     top: 723px;
 }
-}
-
 /*LANDING PAGES */
 .banner{
     position:absolute;
@@ -480,4 +477,141 @@ li.fade {
     height: 124px;
     left: 224px;
     top: 498px;
+}
+/*ENDOLYSIN PROJECT PAGE*/
+
+}
+/* If the screen size is 360px or less */
+@media only screen and (min-width: 361px) {
+    /*NAVIGATION BAR*/
+    .hamburger,
+    .line,
+    li a,
+    li,
+    .nav-links,
+    .nav-links li,
+    .one img,
+    .one a,
+    .two img,
+    .two a,
+    .three img,
+    .three a,
+    .four img,
+    .four a,
+    /*LANDING PAGES */
+    .banner,
+    .banner2,
+    /*MAIN PAGE*/
+    #rh,
+    /*FAIRY ANIMATION*/
+    #fairy,
+    /*PROJECTS PAGE*/
+    #gallery_preview,
+    #about_projects,
+    #about_projects img,
+    #about_projects a,
+    #gallery-1 img,
+    #gallery-1,
+    /*BEER BOX PROJECT PAGE*/
+    #beer,
+    .box_image #box,
+    #heartlike ,
+    #heartclick,
+    #beer_description,
+    #read_more,
+    #line,
+    .beerbox,
+    .beerbox_diecut,
+    .drawing,
+    .outline,
+    /*ABC BOOK PROJECT PAGE*/
+    #book_project,
+    #cover,
+    #book_description,
+    #l,
+    #letter,
+    #letter2 {
+        display:none;
+    }
+    /*ENDOLYSIN PROJECT PAGE*/
+    }
+
+
+/*WEB PAGE*/
+html{
+    background-image: url(/img/crystal_peacockFeather-faded.jpg); 
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+     min-width: 100%;
+     min-height: 100%;
+}
+#headline{
+    margin-top: 40px;
+    display:flex;
+    justify-content: center;
+}
+#headline img{
+    width:70vw;
+}
+.about_me{
+    display:flex;
+    margin-top: 90px;
+    justify-content: center;
+}
+.about_box{
+    display:flex;
+    justify-content: center;
+}
+.box-1{
+    float:left;
+    margin:20px;
+}
+.box-2{
+    float:right;
+    margin:20px;
+}
+.box-2 #headshot{
+    float:right;
+    margin:20px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    width:30vw;
+}
+.box-1 p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    padding:30px;
+    background-image: linear-gradient(to bottom, rgba(252, 165, 84,0.3) 0%, rgba(255, 125, 180,0.3) 100%);
+    border-radius: 90px;
+}
+.box-2 h1,
+.box-2 p,
+.box-2 #splash{
+    float:right;
+    margin:20px;
+}
+.box-2 #splash{
+    width:20vw;
+    z-index:-1;
+    position:absolute;
+}
+.box-1 img{
+    width:30vw;
+}
+.box-2 h1{
+    text-align: right;
+}
+.box-2 p{
+
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
 }

@@ -46,41 +46,31 @@
              <li class="four"><img src="/img/nav_icons 2-03.png" alt="Contact button"><a href="#">Contact</a></li>
          </ul>
     </nav>
-    
-    <div id="about_projects">
+ 
+    <h2 id="lysin_project">Endolysin <br> Project</h2>
 
-        <a href="/box_project.html">
-            <img src="/img/packageimage.jpg">
-        </a>
-    
-        <a href="/abc_project.html">
-            <img src="/img/cover.jpg">
-        </a>
-        
-        <a href="/lysin_project.html">
-            <img src="/img/poster.jpg">
-        </a>
-    </div>
+    <div class="poster_image">
+ <img src="/img/poster.jpg" alt="Endolysin Poster" id="poster">
 
-<h3 id="gallery_preview">Photo Gallery</h3>
+        <img id="heartlike" src="/img/heartlike.png" alt="filled white">
 
-<div id="gallery-1">
+       <img id="heartclick" src="/img/heartclick.png" alt="filled heart">
 
-    <a href="/img/packageimage.jpg">
-        <img src="/img/packageimage.jpg">
-    </a>
-
-    <a href="/img/cover.jpg">
-        <img src="/img/cover.jpg">
-    </a>
-    
-    <a href="/img/poster.jpg">
-        <img src="/img/poster.jpg">
-    </a>
 </div>
 
-    
-    <!-- jQuery Library via CDN -->
+<p id="book_description">An unusual alphabet book directed toward beginners. The abc's, simple concept, with biochemistry terms and definition. </p>
+
+<p id="read_more">Read More</p>
+
+<div id="line"></div>
+
+<img id="l" src="/img/letter L.jpg" alt="Letter L drawing">
+
+<img id="letter" src="/img/abc book-Grid_Layout30.jpg" alt="book page 1">
+
+<img id="letter2" src="/img/abc book-Grid_Layout29.jpg" alt="book page 2">
+
+<!-- jQuery Library via CDN -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/lightgallery.min.js"></script>
@@ -93,5 +83,13 @@
 
     <script src="/js/scripts.js"></script>
 
+<script>
+$(document).ready(function() {
+    $('#heartlike').click(function() {
+        $('#heartlike').fadeOut();
+    });
+});
+
+</script>
 </body>
 </html>
