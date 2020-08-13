@@ -324,9 +324,6 @@ li.fade {
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
     border-radius: 8px;
 }
-#about_projects a{
-
-}
 #gallery-1 img{
     width:30vw;
     border: 2px solid rgb(248, 178, 178);
@@ -511,8 +508,7 @@ li.fade {
     #about_projects,
     #about_projects img,
     #about_projects a,
-    #gallery-1 img,
-    #gallery-1,
+    footer #gallery-1,
     /*BEER BOX PROJECT PAGE*/
     #beer,
     .box_image #box,
@@ -535,6 +531,13 @@ li.fade {
         display:none;
     }
     /*ENDOLYSIN PROJECT PAGE*/
+    #gallery-1 img{
+        width:18vw;
+    }
+    #gallery-1 {
+        display:flex;
+        justify-content: space-evenly;
+    }
     }
 
 
@@ -603,9 +606,6 @@ html{
 }
 .box-2 h1{
     text-align: right;
-}
-.box-2 p{
-
 }
 #text{
     display: flex;
