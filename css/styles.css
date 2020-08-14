@@ -684,3 +684,13 @@ input[type="submit"]:active {
 	transform: translatey(7px);
 
 }
+.follow_along h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.follow_along a {
+    text-decoration: none;
+}
