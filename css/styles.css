@@ -501,8 +501,6 @@ li.fade {
     .banner2,
     /*MAIN PAGE*/
     #rh,
-    /*FAIRY ANIMATION*/
-    #fairy,
     /*PROJECTS PAGE*/
     #gallery_preview,
     #about_projects,
@@ -532,13 +530,76 @@ li.fade {
     }
     /*ENDOLYSIN PROJECT PAGE*/
     #gallery-1 img{
-        width:18vw;
+        width:15vw;
     }
     #gallery-1 {
         display:flex;
         justify-content: space-evenly;
         margin-top: 60px;
     }
+    /*FAIRY ANIMATION*/
+.animate__animated .animate__fly #fairy{
+	position:absolute;
+    z-index:3;
+	transform:translate(-50%, -50%);
+	animation:fly 6s cubic-bezier(.23,.93,.66,.42)  infinite;
+}
+#fairy{
+    width:5%;
+    top:50%;
+    left:70%;
+	position:absolute;
+    z-index:3;
+	transform:translate(-50%, -50%);
+	animation:fly 6s cubic-bezier(.23,.93,.66,.42)  infinite;
+}
+@keyframes fly{
+	0%{
+		
+	}
+	30%{
+		transform:translate(-50%, -40%);
+			transform:translateX(-70%);
+	}
+	50%{
+		transform:translate(-50%, -60%);
+		transform:translate(10%,50%);
+	}
+	100%{
+		transform:translate(-50%, -40%);
+		transform:translate(-50%, -50%);
+	}
+}
+#fairy .cls-1{
+	animation:pulsing 1s infinite;
+}
+@keyframes pulsing{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.06,1.06);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+#fairy .cls-2,
+#fairy .cls-3,
+.cls-4,
+.cls-5 {
+	padding:20px;
+	animation:shakeY 0.1s infinite;
+}
+.cls-6,
+.cls-7{
+		animation:flash 1.9s cubic-bezier(.23,.93,.66,.42) infinite;
+}
+.cls-8,
+.cls-9,
+.cls-10{
+	animation:flash 2s cubic-bezier(.23,.93,.66,.42) infinite;
+}
     }
 
 
@@ -572,6 +633,7 @@ html{
 .box-1{
     float:left;
     margin:20px;
+    margin-bottom: 90px;
 }
 .box-2{
     float:right;
@@ -599,8 +661,8 @@ html{
     width:40vw;
     left:61%;
     position:absolute;
-    top:103%;
-    height:60vh;
+    top:120%;
+    height:70vh;
 }
 .box-1 img{
     width:47vw;
@@ -615,6 +677,17 @@ html{
     position: absolute;
     left:76%;
 }
+.description{
+    margin:30px;
+}
+.description p{
+    color:lightseagreen;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
 footer{
     display:flex;
     justify-content: center;
@@ -627,7 +700,7 @@ footer{
     position:absolute;
     display:flex;
     flex-direction:column;
-    padding-top:90px;
+    padding-top:110px;
 }
 .contact h1{
     font-family: "Abel", sans-serif;
@@ -684,13 +757,22 @@ input[type="submit"]:active {
 	transform: translatey(7px);
 
 }
-.follow_along h2{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+.contact h2{
+    color:rgb(16, 86, 140);
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    justify-content: end;
+    display:flex;
 }
-.follow_along a {
+.contact a {
     text-decoration: none;
+    display:flex;
+    justify-content: end;
+    margin-bottom: 80px;
+}
+.contact img{
+    width:12%;
+    margin-right: 20px;
 }
