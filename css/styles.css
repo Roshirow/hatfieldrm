@@ -600,6 +600,20 @@ li.fade {
 .cls-10{
 	animation:flash 2s cubic-bezier(.23,.93,.66,.42) infinite;
 }
+.contact a:hover{
+	animation:pulse 1s;
+}
+@keyframes pulse{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
     }
 
 
