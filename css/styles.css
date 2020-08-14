@@ -537,6 +537,7 @@ li.fade {
     #gallery-1 {
         display:flex;
         justify-content: space-evenly;
+        margin-top: 60px;
     }
     }
 
@@ -614,15 +615,72 @@ html{
     position: absolute;
     left:76%;
 }
+footer{
+    display:flex;
+    justify-content: center;
+}
 #city{
     width:100%;
 }
 .contact {
-    display:flex;
-    justify-content: center;
-}
-.contact h1{
     z-index:2;
     position:absolute;
-    text-align: center;
+    display:flex;
+    flex-direction:column;
+    padding-top:90px;
+}
+.contact h1{
+    font-family: "Abel", sans-serif;
+    color:rgba(145, 149, 251, 0.86);
+}
+.contact p{
+    font-family: "Abel", sans-serif;
+    color:rgba(145, 149, 251, 0.86);
+}
+input[type="submit"] {
+
+	background-image: linear-gradient(
+
+		to left,
+
+		rgba(255, 119, 40, 0.75) 0%,
+
+		rgba(255, 65, 230, 0.86) 100%
+
+	);
+
+	box-shadow: 0 9px 25px -5px #ff5f15;
+
+	font-family: "Abel", sans-serif;
+
+	padding: 0.5em 1.9em;
+
+	margin: 2.3em 0 0 0;
+
+	border-radius: 7px;
+
+	font-size: 1.4em;
+
+	cursor: pointer;
+
+	color: #ffffff;
+
+	outline: none;
+
+	border: none;
+
+	transition: 0.3s linear;
+
+}
+
+input[type="submit"]:hover {
+
+	transform: translatey(3px);
+
+}
+
+input[type="submit"]:active {
+
+	transform: translatey(7px);
+
 }

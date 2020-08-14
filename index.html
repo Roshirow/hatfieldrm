@@ -95,12 +95,12 @@
 
 <div id="gallery-1">
 
-    <a href="/img/Mountain Label-02.png">
-        <img src="/img/Mountain Label-02.png">
-    </a>
-
     <a href="/img/mountain label.jpg">
         <img src="/img/mountain label.jpg">
+    </a>
+
+    <a href="/img/Mountain Label-02.png">
+        <img src="/img/Mountain Label-02.png">
     </a>
     
     <a href="/img/Beer Box Outline-01.png">
@@ -116,13 +116,37 @@
 
 <footer>
     <div class="contact">
-<h1>Contact Me</h1>
-    </div>
-    <div>
-        <img src="/img/Reimagined Japanese City.png" id="city">
+        <h1>Leave a Comment for Me!</h1>
+
+        <!--VISIBLE-->
+        
+            <form action="https://formspree.io/rhatfield@eagles.ewu.edu" method="POST">
+        
+               <p><label for="name">Name:</label>
+        
+                <input type="text" name="name"></p>
+        
+               <p> <label for="_replyto">Email:</label>
+        
+                <input type="email" name="_replyto"></p><br>
+        
+                <p><label for="comments">Comments:</label></p>
+        
+               <p><textarea name="comments" id="" cols="30" rows="10"></textarea></p>
+        
+             <input type="submit" value="Send">
+        
+              </form>
+        
+        <!--HIDDEN-->
+        
+        <input type="hidden" name="_next" value="/"/>
     </div>
 </footer>
     
+<div class="background">
+    <img src="/img/Reimagined Japanese City.png" id="city">
+</div>
 
 
     
