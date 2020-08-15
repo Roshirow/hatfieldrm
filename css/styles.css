@@ -33,7 +33,8 @@ input[type="submit"],
 .contact h2,
 .contact a,
 .contact img,
-section #gallery-1 {
+section #gallery-1,
+.about_hiking {
     display:none;
     }
 html{
@@ -671,28 +672,6 @@ html{
     margin-top: 90px;
     justify-content: space-evenly;
 }
-.about_hiking img{
-    width:40vw;
-    margin:20px;
-}
-.about_hiking p{
-    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
-}
-.about_box{
-    margin-top:90px;
-    display:flex;
-    justify-content: space-around;
-}
-.box-1{
-    float:left;
-    margin:20px;
-    margin-bottom: 90px;
-}
-.box-2{
-    float:right;
-    margin:20px;
-}
 .box-2 #headshot{
     float:right;
     margin:20px;
@@ -711,11 +690,45 @@ html{
     background-image: linear-gradient(to bottom, rgba(252, 165, 84,0.3) 0%, rgba(255, 125, 180,0.3) 100%);
     border-radius: 90px;
 }
+.about_hiking{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about_hiking img{
+    width:40vw;
+    margin:20px;
+}
+quote{
+    margin:20px;
+    font-family: 'dancing script', cursive;
+    color:lightseagreen;
+    font-size: calc(16px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+.about_hiking p{
+    width:30vw;
+    margin:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+.about_box{
+    height:50vh;
+    margin-top:90px;
+    display:flex;
+    justify-content: space-around;
+}
+.box-1{
+    margin:20px;
+}
+.box-2{
+    margin:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .box-2 #splash{
     width:40vw;
-    left:61%;
-    position:absolute;
-    top:120%;
     height:70vh;
 }
 .box-1 img{
@@ -725,11 +738,11 @@ html{
     text-align: right;
 }
 #text{
+    color:rgb(16, 86, 140);
     display: flex;
     flex-direction: column;
     z-index: 2;
     position: absolute;
-    left:76%;
 }
 .description{
     margin:30px;
@@ -758,64 +771,39 @@ footer{
 }
 .contact h1{
     font-family: "Abel", sans-serif;
-    color:rgba(145, 149, 251, 0.86);
-    
+    color:rgba(255, 111, 28, 0.86);
 	font-size: calc(20px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
-
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
 }
 .contact p{
     font-family: "Abel", sans-serif;
-    color:rgba(145, 149, 251, 0.86);
+    color:rgba(255, 136, 40, 0.86);
     font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 input[type="submit"] {
-
 	background-image: linear-gradient(
-
 		to left,
-
 		rgba(255, 119, 40, 0.75) 0%,
-
 		rgba(255, 65, 230, 0.86) 100%
-
 	);
-
 	box-shadow: 0 9px 25px -5px #ff5f15;
-
 	font-family: "Abel", sans-serif;
-
 	padding: 0.5em 1.9em;
-
 	margin: 2.3em 0 0 0;
-
 	border-radius: 7px;
-
 	font-size: 1.4em;
-
 	cursor: pointer;
-
 	color: #ffffff;
-
 	outline: none;
-
 	border: none;
-
 	transition: 0.3s linear;
-
 }
-
 input[type="submit"]:hover {
-
 	transform: translatey(3px);
-
 }
-
 input[type="submit"]:active {
-
 	transform: translatey(7px);
-
 }
 .contact h2{
     color:rgb(16, 86, 140);
