@@ -671,6 +671,14 @@ html{
     margin-top: 90px;
     justify-content: space-evenly;
 }
+.about_hiking img{
+    width:40vw;
+    margin:20px;
+}
+.about_hiking p{
+    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
 .about_box{
     margin-top:90px;
     display:flex;
