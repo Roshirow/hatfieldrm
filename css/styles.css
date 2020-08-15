@@ -34,6 +34,7 @@ input[type="submit"],
 .contact a,
 .contact img,
 section #gallery-1,
+article #gallery-1,
 .about_hiking {
     display:none;
     }
@@ -713,8 +714,9 @@ quote{
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .about_box{
-    height:50vh;
+    height:60vh;
     margin-top:90px;
+    margin-bottom:40px;
     display:flex;
     justify-content: space-around;
 }
@@ -732,7 +734,7 @@ quote{
     height:70vh;
 }
 .box-1 img{
-    width:47vw;
+    width:45vw;
 }
 .box-2 h1{
     text-align: right;
