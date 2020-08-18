@@ -44,8 +44,8 @@ html{
      background-size: cover;
      background-position: center;
       background-repeat: no-repeat;
-      min-width: 100%;
-     min-height: 100%;
+    width:100vw;
+    height:100vh;
 }
 h1{
     font-family: 'Reem Kufi', sans-serif;
@@ -104,17 +104,15 @@ li{
     font-size:26px;
 }
 .nav-links {
-    display:flex;
-    justify-content: center;
     background-image: linear-gradient(
 		to bottom,
-        rgb(255, 196, 245) 0%,
+        rgb(255, 196, 245,0) 0%,
+        rgb(255, 196, 245) 13%,
         rgba(255, 255, 255) 50%,
-		rgb(255, 137, 239) 100%
+        rgb(255, 196, 245) 88%,
+		rgb(255, 196, 245,0) 100%
 	);
-    width:100%;
-    height:100%;
-    flex-direction:column;
+    width:100vw;
     clip-path: circle(0px at -20% -20%);
     -webkit-clip-path: circle(0px at -20% -20%);
     transition: all 1s ease-out;
@@ -126,6 +124,9 @@ li{
     pointer-events: all;
     z-index:5;
     position:relative;
+    width:100vw;
+    top: 150px;
+    left:-25px;
 }
 .nav-links.open #flowers{
     width:100vw;
@@ -145,53 +146,15 @@ li{
 li.fade {
     opacity:1;
 }
-.one img{
-    width:62px; 
-    height:62px; 
-    left: 96px; 
-    top: 172px; 
-    position:absolute;
-}
 .one a {
-    left: 127px;
-    top: 140px;
-    position:absolute;
-}
-.two img{
-    width:62px; 
-    height:62px;
-    left: 195px; 
-    top: 268px; 
-    position:absolute;
+    left: 150px;
+    top: 350px;
+    position:fixed;
 }
 .two a{
-    position:absolute; 
-    left:250px; 
-    top:250px;
-}
-.three img{
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    left: 185px;
-    top: 507px;
-}
-.three a{
-    position:absolute; 
-    left: 250px;
-    top: 550px;
-}
-.four img{
-    position: absolute;
-    width: 72px;
-    height: 72px;
-    left: 81px;
-    top: 658px;
-}
-.four a{
-    position:absolute; 
-    left: 137px;
-    top: 723px;
+    left: 150px;
+    top: 400px;
+    position:fixed;
 }
 /*LANDING PAGES */
 .banner{
