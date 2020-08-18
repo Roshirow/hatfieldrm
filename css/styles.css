@@ -732,7 +732,50 @@ quote{
 footer{
     display:flex;
     justify-content: center;
+    margin-bottom:90px;
 }
+.resume,
+.business-card {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.resume h2,
+.resume img,
+#pointer,
+.business-card h3,
+.business-card img {
+    margin:20px;
+}
+#pointer {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: rgb(255, 105, 163);
+  }
+  #pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  #pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(255, 105, 163);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
 #city{
     width:100%;
 }
