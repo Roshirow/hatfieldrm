@@ -78,10 +78,11 @@ p{
 }
 /*NAVIGATION BAR screen size 360px or less*/
 .hamburger{
-    left:20px;
-    top:28px;
+    left:28px;
+    top:35px;
     cursor:pointer;
     z-index:2;
+    position: absolute;
 }
 .line {
     width:40px;
