@@ -14,3 +14,5 @@ hamburger.addEventListener('click', () => {
 $('#gallery-1').lightGallery({
     selector: 'a',
 });
+
+alert("Please note that this website is under construction");
