@@ -734,48 +734,31 @@ footer{
     justify-content: center;
     margin-bottom:90px;
 }
-.resume,
-.business-card {
+.resume {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 .resume h2,
-.resume img,
-#pointer,
-.business-card h3,
-.business-card img {
+.resume img {
     margin:20px;
 }
-#pointer {
-    width: 200px;
-    height: 40px;
-    position: relative;
-    background: rgb(255, 105, 163);
-  }
-  #pointer:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
-  #pointer:before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid rgb(255, 105, 163);
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
+.resume h2{
+    color:rgba(115, 187, 255, 0.86);
+    font-family: 'Abel', sans-serif;
+    font-size: calc(20px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
+}
+#pdf img{
+    width:10vw;
+    padding:0;
+    margin:0;
+}
+#pdf:hover{
+    width:9.5vw;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255), 0 0 25px rgb(152, 193, 255), 0 0 5px rgb(173, 173, 255);
+}
 #city{
     width:100%;
 }
