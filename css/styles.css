@@ -504,9 +504,6 @@ li.fade {
     .three a,
     .four img,
     .four a,
-    /*LANDING PAGES */
-    .banner,
-    .banner2,
     /*MAIN PAGE*/
     #rh,
     /*PROJECTS PAGE*/
@@ -536,7 +533,63 @@ li.fade {
     #letter2 {
         display:none;
     }
+/*LANDING PAGES */
+.banner{
+    font-family: 'abel', sans-serif;
+    position:absolute;
+    z-index:5;
+    font-size:5em;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity:0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    background-size: cover;
+    background-position: center;
+    background-color:black;
+    padding:150%;
+}
+.banner2{
+    font-family:'abel', sans-serif;
+    position:absolute;
+    z-index:5;
+    font-size:5em;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity:0;
+    animation-name: fadeIn2;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    background-size: cover;
+    background-position: center;
+    background-color:black;
+    padding:150%;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    80% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes fadeIn2 {
+    0% {
+        opacity:0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity:0;
+    }
+}
 
     #gallery-1 img{
         width:15vw;
