@@ -23,6 +23,26 @@ body {
     padding:0;
     overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+
+    .nav,
+    .icon-rh,
+    .nav-links,
+    .download-resume {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+	}
+    .download-resume {
+        width:10px;
+        padding:2px;
+    }
+    .download-resume a {
+        font-size:8px;
+    }
+}
 section {
     width:0vw;
     height:0vh;
@@ -190,10 +210,11 @@ main {
     font-family:'montserrat';
     text-align:left;
     width:45vw;
-    font-size: calc(40px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
+    font-size:5vw;
 }
 .textbox-intro p {
+    background-color:#9e1a882f;
+    border-radius:20px;
     color:white;
     font-family:'montserrat';
     text-align:left;
@@ -204,6 +225,22 @@ main {
 .textbox-intro a img {
     width:8vw;
 }
+.textbox-intro a:hover {
+	animation:pulsing 1s;
+}
+@keyframes pulsing {
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+
+
 
 .profile-photo {
     display:flex;
@@ -216,4 +253,16 @@ main {
     width:30vw;
     height:auto;
     margin-top:60px;
+    border-radius:20px;
+    transform: translateY(500px);
+    animation: slideIn 6s cubic-bezier(.86,0,.07,1) forwards 2.8s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
 }
