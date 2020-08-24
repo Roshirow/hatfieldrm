@@ -351,6 +351,38 @@ input[type="submit"]:active {
 #gallery-1 img {
     width:10px;
 }
+.about_box {
+    display:flex;
+    flex-direction:row;
+}
+.box-1 {
+    width:50vw;
+    display:flex;
+    flex-direction:column;
+    align-items:;
+}
+#packageimg {
+    width:20vw;
+}
+.hearts {
+    margin:20px;
+}
+.hearts img {
+    width:4vw;
+}
+#heartlike {
+    z-index:3;
+    position:absolute;
+}
+#heartclick {
+    z-index:2;
+    position:absolute;
+}
+.box-2 {
+    width:50vw;
+    display:flex;
+    flex-direction:column;
+}
 
 
 
