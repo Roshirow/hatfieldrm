@@ -431,12 +431,12 @@ input[type="submit"]:active {
 
 /*BEER BOX PROJECT WEBPAGE FOR DESKTOP*/
 #gallery-1 img {
-    width:15vw;
+    width:10vw;
 }
 #beerbox_main {
     width:100vw;
     height:100vh;
-    margin-top:20px;
+    margin-top:10px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -444,7 +444,8 @@ input[type="submit"]:active {
 .box-1 {
     display:flex;
     flex-direction:row;
-    align-items:flex-start;
+    justify-content: space-around;
+    width:50vw;
 }
 #text h1 {
     font-family:'abel', sans-serif;
@@ -464,23 +465,27 @@ input[type="submit"]:active {
     display:flex;
     flex-direction:row;
     width:100vw;
+    justify-content:center;
 }
 #packageimg {
-    width:50vw;
-}
-.hearts {
+    width:60vw;
     margin:20px;
 }
+.hearts {
+    width:20vw;
+}
 .hearts img {
-    width:8vw;
+    width:5vw;
 }
 #heartlike {
     z-index:3;
     position:absolute;
+    margin:20px;
 }
 #heartclick {
     z-index:2;
     position:absolute;
+    margin:20px;
 }
 .box-2 {
     display:flex;
@@ -495,7 +500,7 @@ input[type="submit"]:active {
 .description p {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: calc(11px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+    font-size: 1.5vw;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     margin:4vw;
 }
