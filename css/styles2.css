@@ -391,13 +391,24 @@ input[type="submit"]:active {
 
 
 /*PROJECTS WEBPAGE FOR DESKTOP*/
+#aboutme_main{
+    margin-top:20px;
+    width:100vw;
+    height:100vh;
+}
+.about_projects {
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
 .about_projects li{
     list-style: none;
+    margin:10px;
 }
 .about_projects img{
-	width:25%;
+    width:40vw;
 	height:auto;
-    margin:20px;
     border: 2px solid rgb(248, 178, 178);
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
     border-radius: 8px;
@@ -495,9 +506,18 @@ input[type="submit"]:active {
     display: flex;
     flex-direction:row;
 }
-.about_hiking img{
-    width:40vw;
-    margin:20px;
+#hikingimages {
+    width:50vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#hikingtext {
+    width:50vw;
+}
+#hikingimages img{
+    width:45vw;
+    margin:10px;
 }
 quote{
     margin:20px;
@@ -506,11 +526,10 @@ quote{
     font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
 	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
-.about_hiking p{
-    color:white;
-    width:30vw;
+#hikingtext p{
     margin:20px;
+    color:white;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    font-size: 1.6vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
