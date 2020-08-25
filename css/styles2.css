@@ -309,10 +309,28 @@ nav {
 
 
 /*CONTACT PAGE FOR WEBPAGE DESKTOP*/
+.contact_header {
+    display:flex;
+    flex-direction:column;
+    margin-left:2vw;
+    margin-top:15px;
+}
+.contact_header h1 {
+    margin:20px;
+    font-size:5vw;
+    font-family:'abel', sans-serif;
+    color:white;
+}
+.contact_header h2 {
+    margin:10px;
+    font-size:2.4vw;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
 .contact {
     display:flex;
     justify-content:flex-end;
-    margin:20px;
+    margin-right:20px;
 }
 .contact * {
     display:flex;
@@ -357,6 +375,19 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
 	transform: translatey(7px);
 }
+.social_media ul {
+    list-style:none;
+}
+.social_media ul li {
+    margin:10px;
+}
+.social_media ul li a img {
+    width:10vw;
+}
+.social_media ul li a img:hover{
+	animation:bounce 1s;
+}
+
 
 
 /*PROJECTS WEBPAGE FOR DESKTOP*/
