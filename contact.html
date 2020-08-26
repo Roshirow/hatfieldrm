@@ -80,6 +80,10 @@
             </div>
         </div>
 
+        <div class="cats">
+            <img src="http://placegoat.com/goatse/200/200" alt="" style="width:50%">
+        </div>
+
     <div class="contact">
         <!--VISIBLE-->
         
@@ -109,6 +113,7 @@
     </main>
          <!-- jQuery Library via CDN -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/lightgallery.min.js"></script>
     <script src="/js/lightgallery-all.min.js"></script>
@@ -119,5 +124,26 @@
     <!-- My Scripts -->
 
     <script src="/js/scripts.js"></script>
+
+<script>
+    var getStuff = 'https://api.thecatapi.com/v1/images/search';
+
+var setStuff = {};
+
+var doStuff = function(data){
+  
+ showStuff (data);
+  
+};
+
+$.getJSON( getStuff, setStuff, doStuff);
+
+var showStuff = function(data) {console.log(data[0].url);
+                                
+                                $('img').attr( 'src' , data[0].url  );
+                                
+       }
+</script>
+    
 </body>
 </html>
