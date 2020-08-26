@@ -53,8 +53,15 @@
 
     <nav class="nav">
         <div class="icon-rh">
-            <img src="/img/RH LOGO OUTLINED-01.png" alt="RH logo icon">
-        </div>
+            <a  id="icon" href="/img/RH LOGO OUTLINED-01.png">
+                <img src="/img/RH LOGO OUTLINED-01.png" alt="">
+            </a>
+        
+            <!--LIGHTBOX-->
+            <div id="lightbox" class="">
+                <img src="/img/personal headline2.png" alt="">
+                </div>
+    </div>
         <div class="nav-links">
             <ul>
                 <li><a href="/contact.html">Contact</a></li>
@@ -146,5 +153,31 @@ var showStuff = function(data) {console.log(data[0].url);
        }
 </script>
     
+<script>
+    // BEHAVIOR
+// * jQuery: http://api.jquery.com/
+
+// Hide Lightbox
+// $('#lightbox').hide();
+
+// Show Lightbox
+$('#icon').click( function( event ){
+
+// Hijack the Click
+event.preventDefault();
+
+console.log('OK');
+// Show Lightbox
+$('#lightbox').toggleClass('showLightbox');
+
+});
+
+
+$('#lightbox').click(function(){
+
+$('#lightbox').toggleClass('showLightbox');
+
+});
+</script>
 </body>
 </html>
