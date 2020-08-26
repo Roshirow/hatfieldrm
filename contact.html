@@ -80,9 +80,10 @@
             </div>
         </div>
 
-        <div class="cats">
-            <img src="http://placegoat.com/goatse/200/200" alt="" style="width:50%">
+        <div id="cats">
+            <img  class="cats" src="http://placegoat.com/goatse/200/200" alt="">
         </div>
+
 
     <div class="contact">
         <!--VISIBLE-->
@@ -140,7 +141,7 @@ $.getJSON( getStuff, setStuff, doStuff);
 
 var showStuff = function(data) {console.log(data[0].url);
                                 
-                                $('img').attr( 'src' , data[0].url  );
+                                $('.cats').attr( 'src' , data[0].url  );
                                 
        }
 </script>

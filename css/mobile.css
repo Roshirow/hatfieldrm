@@ -1,4 +1,7 @@
 /*TAKE 2 CSS STYLE SHEET FOR MOBILE DEVICE*/
+
+@media only screen and (max-width: 768px) {
+
 html{
     background-size: cover;
     background-position: center;
@@ -7,7 +10,7 @@ html{
     height:100vh;
     margin:0;
     padding:0;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
 }
@@ -21,10 +24,8 @@ body {
     margin:0;
     margin-top:20px;
     padding:0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-@media only screen and (max-width: 768px) {
-
     .nav,
     .icon-rh,
     .nav-links,
@@ -300,9 +301,20 @@ nav {
     font-family: 'Montserrat', sans-serif;
     color:white;
 }
+#cats {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+}
+.cats {
+    width:30vw;
+    border-radius:10%
+}
 .contact {
     display:flex;
     justify-content:center;
+    margin-bottom:300px;
 }
 .contact * {
     display:flex;
@@ -371,17 +383,33 @@ input[type="submit"]:active {
 .about_projects {
     width:100vw;
     display:flex;
-    align-items:center;
-    justify-content: center;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: space-evenly;
+    margin-bottom:300px;
+}
+.about_projects ul {
+    display:flex;
+    flex-direction:column;
+    width:100vw;
 }
 .about_projects li{
+    display:flex;
+    flex-direction:column;
     list-style: none;
     margin:10px;
+    width:100vw;
+}
+.about_projects p {
+    margin-left:30px;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size:4vw;
 }
 .about_projects img{
     width:70vw;
 	height:auto;
-    border: 4px solid rgb(248, 178, 178);
+    border: 2px solid rgb(248, 178, 178);
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
     border-radius: 8px;
 }
@@ -404,6 +432,7 @@ input[type="submit"]:active {
 /*BEER BOX PROJECT */
 #lightgallery img {
     width:80vw;
+    margin-bottom:20px;
 }
 #lightgallery {
     display:flex;
@@ -439,7 +468,8 @@ input[type="submit"]:active {
 #text p {
     font-family:'abel', sans-serif;
     color:white;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    margin-right:20px;
 }
 .about_box {
     display:flex;
@@ -462,11 +492,15 @@ input[type="submit"]:active {
     z-index:3;
     position:absolute;
     margin:20px;
+    top:1vh;
+    left:75vw;
 }
 #heartclick {
     z-index:2;
     position:absolute;
     margin:20px;
+    top:1vh;
+    left:75vw;
 }
 .box-2 {
     display:flex;
@@ -474,17 +508,16 @@ input[type="submit"]:active {
     justify-content:center;
 }
 #splash {
-    width:30vw;
-    z-index:-1;
-    position: absolute;
+    display:none;
 }
 .description p {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2vw;
+    font-size: 4vw;
 	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     margin-right:4vw;
     margin-left:4vw;
+    margin-bottom:300px;
 }
 
 
@@ -492,6 +525,7 @@ input[type="submit"]:active {
 .about_hiking{
     display: flex;
     flex-direction:column;
+    margin-bottom:200px;
 }
 #hikingimages {
     width:100vw;
