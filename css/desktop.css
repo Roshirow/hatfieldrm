@@ -371,7 +371,7 @@ input[type="submit"]:active {
 
 /*PROJECTS WEBPAGE FOR DESKTOP*/
 #aboutme_main{
-    margin-top:10px;
+    margin-top:5px;
     width:100vw;
     height:100vh;
 }
@@ -389,7 +389,7 @@ input[type="submit"]:active {
     display:flex;
     flex-direction:column;
     list-style: none;
-    margin:10px;
+    margin:3px;
 }
 .about_projects p {
     color:white;
@@ -397,7 +397,7 @@ input[type="submit"]:active {
     font-size:1.8vw;
 }
 .about_projects img{
-    width:30vw;
+    width:23vw;
 	height:auto;
     border: 2px solid rgb(248, 178, 178);
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
@@ -461,6 +461,7 @@ input[type="submit"]:active {
 #packageimg {
     width:40vw;
     margin-bottom:5px;
+    border-radius:10%;
 }
 .hearts {
     width:20vw;
