@@ -142,11 +142,34 @@ nav {
 }
 .icon-rh {
     display:flex;
-    justify-content: center;
-    width:20vw;
+    align-items:center;
+    justify-content:center;
+    width:25vw;
 }
 .icon-rh img {
     width:8vw;
+}
+#lightbox {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: rgba(0,0,0,0.8);
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+    opacity:0;
+    transition:opacity 1s;
+}
+#lightbox.showLightbox {
+    opacity:1;
+    z-index:2;
+}
+#lightbox img {
+    width:100vw;
+    height:auto;
 }
 .nav-links {
     width: 60vw;

@@ -36,14 +36,37 @@ body {
         justify-content: space-evenly;
         align-items: center;
     }
-    .icon-rh {
-        width:100vw;
-        height:20vw;
-        display:flex;
-        justify-content: center;
-    }
     .icon-rh img{
         width:20vw;
+    }
+    .icon-rh {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100vw;
+        height:20vw;
+    }
+    #lightbox {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background: rgba(0,0,0,0.8);
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-2;
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #lightbox.showLightbox {
+        opacity:1;
+        z-index:2;
+    }
+    #lightbox img {
+        width:100vw;
+        height:auto;
     }
     .nav-links ul {
         margin-right:10px;
@@ -227,7 +250,6 @@ nav {
     color:white;
     font-family:'montserrat';
     text-align:center;
-    width:100vw;
     font-size:8vw;
 }
 .textbox-intro p {
@@ -236,16 +258,15 @@ nav {
     color:white;
     font-family:'montserrat';
     text-align:left;
-    width:100vw;
-    font-size: 4vw;
-    margin-right:30px;
-    margin-left:30px;
+    font-size: 3vw;
+    margin-right:50px;
+    margin-left:50px;
 }
 .textbox-intro a {
-    width:100px;
+    width:18vw;
 }
 .textbox-intro a img {
-    width:20vw;
+    width:18vw;
 }
 .textbox-intro a:hover {
 	animation:pulsing 1s;
