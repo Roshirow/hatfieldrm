@@ -38,6 +38,7 @@
 <link rel="stylesheet" href="/css/lightgallery-all.min.js">
 <link rel="stylesheet" href="/css/lightgallery.min.css">
 <link rel="stylesheet" href="/css/lg-transitions.min.css">
+<link type="text/css" rel="stylesheet" href="css/lightGallery.css">
 
 <!-- My Awesome Styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
@@ -91,7 +92,7 @@
 
 
 
-<div id="gallery-1">
+<div id="lightgallery">
 
     <a href="/img/context.png">
         <img src="/img/context.png" alt="">
@@ -127,8 +128,24 @@
     <script src="/js/lightgallery.min.js"></script>
     <script src="/js/lightgallery-all.min.js"></script>
 
-    <!-- Plugins(s) -->
+            <!-- jQuery version must be >= 1.8.0; -->
+            <script src="jquery.min.js"></script>
 
+            <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+        
+            <script src="js/lightgallery.min.js"></script>
+        
+            <!-- lightgallery plugins -->
+            <script src="js/lg-thumbnail.min.js"></script>
+            <script src="js/lg-fullscreen.min.js"></script>
+
+    <!-- Plugins(s) -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+        });
+    </script>
 
     <!-- My Scripts -->
 
