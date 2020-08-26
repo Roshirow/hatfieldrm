@@ -56,6 +56,83 @@ body {
 		transform:scaleX(1);
 	}
 }
+section {
+    width:100vw;
+    height:100vh;
+    z-index:5;
+    position:absolute;
+    animation-name: fadeIn-background;
+    animation-duration: 5s;
+    opacity:0;
+    background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
+}
+section h1 {
+    font-size: 18vw;
+    font-family:'montserrat';
+    color:white;
+}
+section .banner {
+    margin:0;
+    padding:0;
+    text-align:center;
+    opacity:0;
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+}
+section .banner2 {
+    padding:0;
+    margin: 0;
+    opacity:0;
+    font-size:0;
+    width:100vw;
+    animation-name: fadeIn2;
+    animation-delay:2.5s;
+    animation-duration: 2s;
+}
+@keyframes fadeIn-background {
+    0%{
+        opacity:1;
+        width:100vw;
+        height:100vh;
+    }
+    90%{
+        opacity:1;
+        width:100vw;
+        height:100vh;
+    }
+    100%{
+        opacity:0;
+        display:none;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    80% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes fadeIn2 {
+    0% {
+        opacity:0;
+    }
+    1% {
+        opacity:0;
+        font-size:20vw;
+    }
+    15% {
+        opacity: 1;
+        font-size:20vw;
+    }
+    100% {
+        opacity:0;
+        font-size:20vw;
+    }
+}
 nav {
     margin-top:10px;
     display:flex;
@@ -324,7 +401,7 @@ input[type="submit"]:active {
 
 /*BEER BOX PROJECT WEBPAGE FOR DESKTOP*/
 #lightgallery img {
-    width:8vw;
+    width:14vw;
 }
 #beerbox_main {
     width:100vw;
@@ -357,7 +434,9 @@ input[type="submit"]:active {
     display:flex;
     flex-direction:row;
     width:100vw;
+    height:283.567px;
     justify-content:center;
+    margin-bottom:20px;
 }
 #packageimg {
     width:40vw;
@@ -392,7 +471,7 @@ input[type="submit"]:active {
 .description p {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     margin-right:4vw;
     margin-left:4vw;
