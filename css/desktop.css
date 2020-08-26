@@ -1,0 +1,434 @@
+/*TAKE 2 CSS STYLE SHEET FOR DESKTOP WEBPAGE*/
+html{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
+}
+body {
+    background: url('/img/background-design.png');
+    background-position: top;
+    background-position-y:-20%;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    margin-top:20px;
+    padding:0;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+.download-resume {
+    display:flex;
+    justify-content: center;
+    width:50vw;
+}
+.download-resume a {
+    font-family:'montserrat';
+    text-decoration:none;
+    color:white;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.download-resume a:hover{
+	animation:pulse 1s;
+}
+@keyframes pulse{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+nav {
+    margin-top:10px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+.icon-rh {
+    display:flex;
+    justify-content: center;
+    width:20vw;
+}
+.icon-rh img {
+    width:8vw;
+}
+.nav-links {
+    width: 60vw;
+}
+.nav-links ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links li a {
+    font-family:'Montserrat';
+    color:white;
+    font-size: 2vw;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    text-decoration: none;
+}
+.nav-links li a:hover {
+    color:rgba(255, 192, 203, 0.815);
+}
+#index_main {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top:50px;
+}
+#index1_main {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:50px;
+}
+ #index1_main .profile-photo {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:50vw;
+    height:100vh;
+}
+ #index1_main .profile-photo img {
+    width:30vw;
+    height:auto;
+    margin-top:60px;
+    border-radius:20px;
+    transform: translateY(500px);
+    animation: slideIn 1.7s cubic-bezier(.55,.12,.28,.76) forwards 0s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+.textbox-intro {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-end;
+    width:50vw;
+}
+.textbox-intro h1{
+    color:white;
+    font-family:'montserrat';
+    text-align:left;
+    width:45vw;
+    font-size:5vw;
+}
+.textbox-intro p {
+    background-color:#9e1a882f;
+    border-radius:20px;
+    color:white;
+    font-family:'montserrat';
+    text-align:left;
+    width:45vw;
+    font-size: calc(8px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+.textbox-intro a img {
+    width:8vw;
+}
+.textbox-intro a:hover {
+	animation:pulsing 1s;
+}
+@keyframes pulsing {
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+
+
+
+.profile-photo {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:50vw;
+    height:100vh;
+}
+.profile-photo img {
+    width:30vw;
+    height:auto;
+    margin-top:60px;
+    border-radius:20px;
+    transform: translateY(500px);
+    animation: slideIn 6s cubic-bezier(.86,0,.07,1) forwards 2.8s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+
+/*CONTACT PAGE FOR WEBPAGE DESKTOP*/
+#contact_main {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.contact_header {
+    display:flex;
+    flex-direction:column;
+    margin-top:10px;
+}
+.contact_header h1 {
+    font-size:2.5vw;
+    font-family:'abel', sans-serif;
+    color:white;
+}
+.contact_header h2 {
+    margin:5px;
+    font-size:1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+.contact {
+    display:flex;
+    justify-content:flex-end;
+}
+.contact * {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.contact input {
+    display:flex;
+    align-items:center;
+}
+.contact p{
+    font-family: "Abel", sans-serif;
+    color:rgb(253, 157, 78);
+    font-size: calc(10px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+input[type="submit"] {
+	background-image: linear-gradient(
+		to left,
+		rgba(255, 119, 40, 0.75) 0%,
+		rgba(255, 65, 230, 0.86) 100%
+	);
+	box-shadow: 0 9px 25px -5px #ff5f15;
+    font-family: "Abel", sans-serif;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+    padding-right:1em;
+    padding-left:1em;
+    margin: 2.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #ffffff;
+	outline: none;
+	border: none;
+    transition: 0.3s linear;
+    float:right;
+}
+input[type="submit"]:hover {
+	transform: translatey(3px);
+}
+input[type="submit"]:active {
+	transform: translatey(7px);
+}
+.social_media ul {
+    list-style:none;
+}
+.social_media ul li {
+    margin:20px;
+}
+.social_media ul li a img {
+    width:4vw;
+}
+.social_media ul li a img:hover{
+	animation:bounce 1s;
+}
+
+
+
+/*PROJECTS WEBPAGE FOR DESKTOP*/
+#aboutme_main{
+    margin-top:10px;
+    width:100vw;
+    height:100vh;
+}
+.about_projects {
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.about_projects li{
+    list-style: none;
+    margin:10px;
+}
+.about_projects img{
+    width:10vw;
+	height:auto;
+    border: 2px solid rgb(248, 178, 178);
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
+    border-radius: 8px;
+}
+.about_projects img:hover{
+	animation:pulse 1s;
+}
+@keyframes pulse{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+
+
+/*BEER BOX PROJECT WEBPAGE FOR DESKTOP*/
+#lightgallery img {
+    width:8vw;
+}
+#beerbox_main {
+    width:100vw;
+    height:100vh;
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.box-1 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    width:50vw;
+}
+#text h1 {
+    font-family:'abel', sans-serif;
+    text-align:right;
+    color:white;
+    font-size: calc(24px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.4em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+#text p {
+    font-family:'abel', sans-serif;
+    color:white;
+    font-size: calc(11px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+.about_box {
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    justify-content:center;
+}
+#packageimg {
+    width:40vw;
+    margin-bottom:5px;
+}
+.hearts {
+    width:20vw;
+}
+.hearts img {
+    width:5vw;
+}
+#heartlike {
+    z-index:3;
+    position:absolute;
+    margin:20px;
+}
+#heartclick {
+    z-index:2;
+    position:absolute;
+    margin:20px;
+}
+.box-2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+#splash {
+    width:30vw;
+    z-index:-1;
+    position: absolute;
+}
+.description p {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 1.2vw;
+	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    margin-right:4vw;
+    margin-left:4vw;
+}
+
+
+/*ABOUT ME WEBPAGE FOR DESKTOP*/
+.about_hiking{
+    display: flex;
+    flex-direction:row;
+}
+#hikingimages {
+    width:50vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#hikingtext {
+    width:50vw;
+}
+#hikingimages img{
+    width:45vw;
+    margin:10px;
+}
+quote{
+    margin:20px;
+    font-family: 'dancing script', cursive;
+    color:lightseagreen;
+    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+#hikingtext p{
+    margin:20px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+}
