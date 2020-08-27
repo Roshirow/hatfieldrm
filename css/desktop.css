@@ -198,13 +198,13 @@ nav {
     display:flex;
     flex-direction:row;
     justify-content: center;
-    margin-top:50px;
+    margin-top:5px;
 }
 #index1_main {
     display:flex;
     flex-direction:row;
     justify-content:center;
-    margin-top:50px;
+    margin-top:5px;
 }
  #index1_main .profile-photo {
     display:flex;
@@ -244,6 +244,14 @@ nav {
     width:45vw;
     font-size:5vw;
 }
+.textbox-intro h2 {
+    color:rgb(199, 222, 252);
+    font-family: 'Handlee', cursive;
+    text-align:left;
+    width:45vw;
+    font-size:1.6vw;
+	line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
 .textbox-intro p {
     background-color:#9e1a882f;
     border-radius:20px;
@@ -251,7 +259,7 @@ nav {
     font-family:'montserrat';
     text-align:left;
     width:45vw;
-    font-size: calc(8px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+    font-size:1vw;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .textbox-intro a img {
@@ -313,6 +321,7 @@ nav {
 }
 .contact_header h1 {
     font-size:2.5vw;
+    text-align:center;
     font-family:'abel', sans-serif;
     color:white;
 }
@@ -321,6 +330,14 @@ nav {
     font-size:1.5vw;
     font-family: 'Montserrat', sans-serif;
     color:white;
+}
+.contact_header h3 {
+    margin:5px;
+    font-size:1vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(153, 189, 255);
 }
 #cats {
     display:flex;
@@ -445,7 +462,7 @@ input[type="submit"]:active {
 
 /*BEER BOX PROJECT WEBPAGE FOR DESKTOP*/
 #lightgallery img {
-    width:14vw;
+    width:5vw;
 }
 #beerbox_main {
     width:100vw;
@@ -465,61 +482,54 @@ input[type="submit"]:active {
     font-family:'abel', sans-serif;
     text-align:right;
     color:white;
-    font-size: calc(24px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
-	line-height: calc(1.4em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    font-size:2vw;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 #text p {
     font-family:'abel', sans-serif;
     color:white;
-    font-size: calc(11px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+    font-size:1.2vw;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .about_box {
     display:flex;
     flex-direction:row;
     width:100vw;
-    height:283.567px;
     justify-content:center;
-    margin-bottom:20px;
 }
 #packageimg {
-    width:40vw;
+    width:20vw;
     margin-bottom:5px;
     border-radius:10%;
 }
 .hearts {
-    width:20vw;
+    width:10vw;
 }
 .hearts img {
-    width:5vw;
+    width:3vw;
 }
 #heartlike {
     z-index:3;
     position:absolute;
-    margin:20px;
+    margin:10px;
 }
 #heartclick {
     z-index:2;
     position:absolute;
-    margin:20px;
+    margin:10px;
 }
 .box-2 {
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
 }
-#splash {
-    width:30vw;
-    z-index:-1;
-    position: absolute;
-}
 .description p {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.4vw;
-	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
-    margin-right:4vw;
-    margin-left:4vw;
+    font-size: 1vw;
+	line-height:2.5vh;
+    margin-right:3vw;
+    margin-left:3vw;
 }
 
 

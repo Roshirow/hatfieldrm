@@ -246,6 +246,15 @@ nav {
     text-align:center;
     font-size:8vw;
 }
+.textbox-intro h2 {
+    margin-right:50px;
+    margin-left:50px;
+    color:rgb(153, 197, 255);
+    font-family: 'Handlee', cursive;
+    text-align:left;
+    font-size:4vw;
+	line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
 .textbox-intro p {
     background-color:#9e1a882f;
     border-radius:20px;
@@ -315,6 +324,14 @@ nav {
     font-size:5vw;
     font-family: 'Montserrat', sans-serif;
     color:white;
+}
+.contact_header h3 {
+    margin:5px;
+    font-size:3.5vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(153, 189, 255);
 }
 #cats {
     display:flex;
@@ -528,8 +545,8 @@ input[type="submit"]:active {
 .description p {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 4vw;
-	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    font-size: 3.8vw;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     margin-right:4vw;
     margin-left:4vw;
     margin-bottom:300px;
