@@ -1,0 +1,355 @@
+/* CSS STYLE SHEET FOR PROJECT WEBPAGES DESKTOP*/
+
+@media only screen and (min-width: 769px) {
+    html{
+        background-position: center;
+        width:100vw;
+        scroll-behavior: smooth;
+        background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
+    }
+    body {
+        background: url('/img/background-design.png');
+        background-position: top;
+        width:100vw;
+        margin-top:15px;
+
+    }
+.download-resume {
+    display:flex;
+    justify-content: center;
+    width:50vw;
+}
+.download-resume a {
+    font-family:'montserrat';
+    text-decoration:none;
+    color:white;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.download-resume a:hover{
+	animation:pulse 1s;
+}
+@keyframes pulse{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.09,1.09);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+nav {
+    margin-top:10px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+.icon-rh {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:25vw;
+}
+.icon-rh img {
+    width:8vw;
+}
+#lightbox {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: rgba(0,0,0,0.8);
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+    opacity:0;
+    transition:opacity 1s;
+}
+#lightbox.showLightbox {
+    opacity:1;
+    z-index:2;
+}
+#lightbox img {
+    width:100vw;
+    height:auto;
+}
+.nav-links {
+    width: 60vw;
+}
+.nav-links ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links li a {
+    font-family:'Montserrat';
+    color:white;
+    font-size: 2vw;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    text-decoration: none;
+}
+.nav-links li a:hover {
+    color:rgba(255, 192, 203, 0.815);
+}
+
+
+/*BEER BOX PROJECT WEBPAGE FOR DESKTOP*/
+#lightgallery img {
+    width:13vw;
+    margin:10px;
+}
+#lightgallery {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+#beerbox_main {
+    width:100vw;
+    height:100vh;
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.box-1 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    width:50vw;
+}
+#text h1 {
+    font-family:'abel', sans-serif;
+    text-align:right;
+    color:white;
+    font-size:2vw;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+#text p {
+    font-family:'abel', sans-serif;
+    color:white;
+    font-size:1.2vw;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+}
+.about_box {
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    justify-content:center;
+}
+#packageimg {
+    width:20vw;
+    margin-bottom:5px;
+    border-radius:10%;
+}
+.hearts {
+    width:10vw;
+}
+.hearts img {
+    width:3vw;
+}
+#heartlike {
+    z-index:3;
+    position:absolute;
+    margin:10px;
+}
+#heartclick {
+    z-index:2;
+    position:absolute;
+    margin:10px;
+}
+.box-2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+.description {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+}
+.description h1 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 5vw;
+    line-height:25vh;
+}
+#notesnapshot {
+    width:50vw;
+}
+.par-1 {
+    display:flex;
+    width:100vw;
+    justify-content: flex-end;
+}
+#par-1 {
+    margin-right:20px;
+    width:60vw;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 2vw;
+    border-top: 3px solid white;
+    border-right:3px solid white; 
+}
+
+
+/* Doodle Stage */
+#stage {
+    color:rgb(255, 255, 0);
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1882231/thAABNY7DY.jpg);
+    /*fixed sizes*/
+    height: 250px;
+    width: 500px;
+    position:relative;
+    overflow:hidden;
+  }
+  #stage:hover #wings img{
+    top:10px;
+  }
+  #stage #wings img{
+    z-index:10;
+    left:30%;
+    top:250px;
+    position:absolute;
+    transition:1s;
+      width:30%;
+  }
+  #stage #smiles img{
+      z-index:10;
+      position:absolute;
+      width:100%;
+      top:-20px;
+      opacity:0.4;
+      animation:flash 1s 7s;
+  }
+  #stage #music img{
+      z-index:40;
+      width:10%;
+      left:-30px;
+      top:120px;
+      position:absolute;
+      animation:pulse 5s ease-in infinite;
+  }
+  #stage #music img{
+      animation-name:move;
+      animation-duration:3.5s;
+      animation-delay:2s;
+  }
+  @keyframes move{
+      0%{transform:translateX(0);opacity:0;}
+      50%{opacity:0;}
+      100%{transform:translateX(550px);opacity:10;}
+  }
+  #stage #notes img{
+      z-index:40;
+      width:10%;
+      left:-30px;
+      top:120px;
+      position:absolute;
+      animation:pulse 5s ease-in infinite;
+  }
+  #stage #notes img{
+      animation-name:slide;
+      animation-duration:3.5s;
+      animation-delay:3s;
+  }
+  @keyframes slide{
+      0%{transform:translateX(0);opacity:0;}
+      50%{opacity:0;}
+      100%{transform:translateX(550px);opacity:10;}
+  }
+  /*GOOGLE TEXT*/
+  #doodle {
+      position: absolute;
+      z-index:10;
+      top: 30%;
+      left: 50%;
+      width: 70%;
+      transform: translate(-50%, -50%);
+  }
+  #doodle path{
+      stroke: #fcee21;
+      fill: black;
+      stroke-dasharray: 400;
+      opacity: 10;
+      animation: animate 5s cubic-bezier(0, 0.23, 1, 0.1);
+  }
+  /*GOOGLE ANIMATION*/
+  @keyframes animate {
+      0% {
+          opacity: 0;
+          fill: none;
+          stroke-dashoffset: 400;
+      }
+      30% {
+          opacity: 10;
+          fill: none;
+          stroke-dashoffset: 400;
+      }
+      90% {
+          fill: rgba(252, 238, 33, 0);
+      }
+      100% {
+          opacity: 10;
+          fill: rgba(252, 238, 33, 1);
+          stroke-dashoffset: 0;
+      }
+  }
+  /*GUITAR STYLES*/
+  #guitar{
+      position:absolute;
+      z-index:30;
+      top: -60px;
+      left:40%;
+      width:20%;
+      animation:strum 2s 1s;
+      animation-fill-mode:forwards;
+  }
+  
+  /*GUITAR ANIMATION*/
+  @keyframes strum {
+      
+      0% {
+          transform:translateY(0);
+      }
+      
+      100% {
+          transform:translateY(250px);
+      }
+      
+  }
+      
+      /*FRONT VIEW COBAIN*/
+  #frontview{
+      position: absolute;
+      z-index:20;
+      top: 50.4%;
+      left:40%;
+      width: 13.5%;
+      animation:center 3s 1s;
+  }
+  /*ANIMATIONS*/
+  @keyframes center{
+          0%{opacity:0;}
+      100%{opacity:10;}
+  }
+
+footer {
+    text-align:center;
+}
+}
