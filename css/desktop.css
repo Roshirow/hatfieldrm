@@ -19,7 +19,7 @@
         background-position-y:-20%;
         background-repeat: no-repeat;
         width:100vw;
-        height:100vh;
+        height:200vh;
         margin:0;
         margin-top:20px;
         padding:0;
@@ -350,7 +350,7 @@ nav {
 }
 .contact {
     display:flex;
-    justify-content:flex-end;
+    justify-content:flex-start;
 }
 .contact * {
     display:flex;
