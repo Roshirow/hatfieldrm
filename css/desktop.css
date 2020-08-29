@@ -263,7 +263,7 @@ nav {
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .textbox-intro a img {
-    width:8vw;
+    width:5vw;
 }
 .textbox-intro a:hover {
 	animation:pulsing 1s;
@@ -280,8 +280,6 @@ nav {
 	}
 }
 
-
-
 .profile-photo {
     display:flex;
     justify-content: center;
@@ -290,7 +288,7 @@ nav {
     height:100vh;
 }
 .profile-photo img {
-    width:30vw;
+    width:28vw;
     height:auto;
     margin-top:60px;
     border-radius:20px;
@@ -438,7 +436,7 @@ input[type="submit"]:active {
     font-size:1.8vw;
 }
 .about_projects img{
-    width:23vw;
+    width:20vw;
 	height:auto;
     border: 2px solid rgb(248, 178, 178);
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.4));
@@ -460,79 +458,6 @@ input[type="submit"]:active {
 }
 
 
-/*BEER BOX PROJECT WEBPAGE FOR DESKTOP*/
-#lightgallery img {
-    width:5vw;
-}
-#beerbox_main {
-    width:100vw;
-    height:100vh;
-    margin-top:10px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-.box-1 {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    width:50vw;
-}
-#text h1 {
-    font-family:'abel', sans-serif;
-    text-align:right;
-    color:white;
-    font-size:2vw;
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
-}
-#text p {
-    font-family:'abel', sans-serif;
-    color:white;
-    font-size:1.2vw;
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
-}
-.about_box {
-    display:flex;
-    flex-direction:row;
-    width:100vw;
-    justify-content:center;
-}
-#packageimg {
-    width:20vw;
-    margin-bottom:5px;
-    border-radius:10%;
-}
-.hearts {
-    width:10vw;
-}
-.hearts img {
-    width:3vw;
-}
-#heartlike {
-    z-index:3;
-    position:absolute;
-    margin:10px;
-}
-#heartclick {
-    z-index:2;
-    position:absolute;
-    margin:10px;
-}
-.box-2 {
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-}
-.description p {
-    color:white;
-    font-family:'abel', sans-serif;
-    font-size: 1vw;
-	line-height:2.5vh;
-    margin-right:3vw;
-    margin-left:3vw;
-}
-
-
 /*ABOUT ME WEBPAGE FOR DESKTOP*/
 .about_hiking{
     display: flex;
@@ -548,7 +473,7 @@ input[type="submit"]:active {
     width:50vw;
 }
 #hikingimages img{
-    width:45vw;
+    width:35vw;
     margin:10px;
 }
 quote{
