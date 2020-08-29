@@ -1,0 +1,392 @@
+/* CSS STYLE SHEET FOR PROJECT WEBPAGES MOBILE*/
+
+@media only screen and (max-width: 768px) {
+
+    html{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:100vw;
+        height:100vh;
+        margin:0;
+        padding:0;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
+    }
+    body {
+        background: url('/img/background-design.png');
+        background-position: top;
+        background-position-y:-20%;
+        background-repeat: no-repeat;
+        width:100vw;
+        height:100vh;
+        margin:0;
+        margin-top:20px;
+        padding:0;
+        overflow-x: hidden;
+    }
+        .nav,
+        .icon-rh,
+        .nav-links,
+        .download-resume {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .icon-rh img{
+            width:20vw;
+        }
+        .icon-rh {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:100vw;
+            height:20vw;
+        }
+        #lightbox {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: rgba(0,0,0,0.8);
+            width:100vw;
+            height:100vh;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:-2;
+            opacity:0;
+            transition:opacity 1s;
+        }
+        #lightbox.showLightbox {
+            opacity:1;
+            z-index:2;
+        }
+        #lightbox img {
+            width:100vw;
+            height:auto;
+        }
+        .nav-links ul {
+            margin-right:10px;
+            margin-left:10px;
+            padding-right:5px;
+            padding-left:5px;
+            width:100vw;
+        }
+        .nav-links ul li a {
+            font-size:4vw;
+        }
+        .download-resume {
+            width:100vw;
+        }
+        .download-resume a {
+            font-family:'montserrat';
+            text-decoration:none;
+            color:white;
+            border-radius: 100px;
+            font-size:3vw;
+            border:2px solid white;
+            padding-right:10px;
+            padding-left:10px;
+            padding-top:3px;
+            padding-bottom:3px;
+        }
+    
+    section {
+        width:0vw;
+        height:0vh;
+        z-index:5;
+        position:absolute;
+        animation-name: fadeIn-background;
+        animation-duration: 5s;
+        opacity:0;
+        background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
+    }
+    
+    section .banner h1 {
+        font-family:'montserrat';
+        color:white;
+        text-align:center;
+        font-size:16vw;
+        opacity:0;
+        animation-name: fadeIn;
+        animation-duration: 1.3s;
+    }
+    section .banner2 h1 {
+        font-family:'montserrat';
+        color:white;
+        text-align:center;
+        font-size:0;
+        opacity:0;
+        animation-name: fadeIn2;
+        animation-delay:2.5s;
+        animation-duration: 2s;
+    }
+    @keyframes fadeIn-background {
+        0%{
+            opacity:1;
+            width:100vw;
+            height:100vh;
+        }
+        90%{
+            opacity:1;
+            width:100vw;
+            height:100vh;
+        }
+        100%{
+            opacity:0;
+            display:none;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity:0;
+        }
+        80% {
+            opacity:1;
+        }
+        100% {
+            opacity:0;
+        }
+    }
+    @keyframes fadeIn2 {
+        0% {
+            opacity:0;
+        }
+        1% {
+            opacity:0;
+            font-size:15vw;
+        }
+        15% {
+            opacity: 1;
+            font-size:15vw;
+        }
+        100% {
+            opacity:0;
+            font-size:15vw;
+        }
+    }
+    nav {
+        margin-top:10px;
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .nav-links {
+        width: 60vw;
+    }
+    .nav-links ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .nav-links li {
+        list-style: none;
+    }
+    .nav-links li a {
+        font-family:'Montserrat';
+        color:white;
+        font-size: 2vw;
+        line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+        text-decoration: none;
+    }
+    
+    .download-resume a:hover{
+        animation:pulse 1s;
+    }
+    @keyframes pulse{
+        0%{
+            transform:scaleX(1);
+        }
+        50%{
+            transform:scale3d(1.0,1.09,1.09);
+        }
+            100%{
+            transform:scaleX(1);
+        }
+    }
+    .nav-links li a:hover {
+        color:rgba(255, 192, 203, 0.815);
+    }
+
+
+/*BEER BOX PROJECT CSS MOBILE */
+#lightgallery img {
+    width:80vw;
+    margin-bottom:20px;
+}
+#lightgallery {
+    display:flex;
+    flex-flow:column wrap;
+}
+#beerbox_main {
+    width:100vw;
+    height:100vh;
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.box-1 {
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content: flex-start;
+    width:100vw;
+    align-items:flex-start;
+}
+#text {
+    width:100vw;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+#text h1 {
+    font-family:'abel', sans-serif;
+    text-align:left;
+    color:white;
+    font-size:8vw;
+}
+#text p {
+    font-family:'abel', sans-serif;
+    color:white;
+    font-size: 3.5vw;
+    margin-right:20px;
+}
+.about_box {
+    display:flex;
+    flex-direction:column-reverse;
+    width:100vw;
+    justify-content:center;
+    align-items:center;
+}
+#packageimg {
+    width:100vw;
+    margin-bottom:10px;
+}
+.hearts {
+    width:40vw;
+}
+.hearts img {
+    width:10vw;
+}
+#heartlike {
+    z-index:3;
+    position:absolute;
+    margin:20px;
+    top:1vh;
+    left:75vw;
+}
+#heartclick {
+    z-index:2;
+    position:absolute;
+    margin:20px;
+    top:1vh;
+    left:75vw;
+}
+.box-2 {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.description {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+}
+.description h1 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 5vw;
+    line-height:5vh;
+    width:10vw;
+}
+
+#notesnapshot {
+    width:70vw;
+}
+.par-1 {
+    display:flex;
+    width:100vw;
+    justify-content: center;
+}
+#par-1 {
+    margin:30px;
+    width:100vw;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 4vw;
+    line-height:4vh;
+}
+.par-2 {
+    display:flex;
+    width:100vw;
+    justify-content: center;
+}
+#par-2 {
+    margin:30px;
+    width:100vw;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 4vw;
+    line-height:4vh;
+}
+.par-3 {
+    display:flex;
+    width:100vw;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#par-3 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 4vw;
+    line-height:4vh;
+    width:90vw;
+}
+.par-3 quote {
+    color:rgb(219, 236, 255);
+    font-family:'abel', sans-serif;
+    font-size: 4.1vw;
+    line-height:4vh;
+    text-align:center;
+    width:80vw;
+}
+#par-4 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 4vw;
+    line-height:4vh;
+    width:90vw;
+}
+#par-5 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 4vw;
+    line-height:4vh;
+    width:90vw;
+}
+.par-6 {
+    display:flex;
+    width:100vw;
+    justify-content: center;
+}
+#par-6 {
+    margin:30px;
+    width:100vw;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 4vw;
+    line-height:4vh;
+}
+#stage {
+    display:none;
+}
+}
