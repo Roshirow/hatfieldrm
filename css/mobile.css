@@ -104,22 +104,26 @@ section {
     opacity:0;
     background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
 }
-
-section .banner h1 {
+section h1 {
     font-family:'montserrat';
     color:white;
     text-align:center;
-    font-size:16vw;
-    opacity:0;
-    animation-name: fadeIn;
-    animation-duration: 1.3s;
 }
-section .banner2 h1 {
-    font-family:'montserrat';
-    color:white;
-    text-align:center;
-    font-size:0;
+.banner h1 {
+    padding:0;
+    margin: 0;
     opacity:0;
+    line-height:0;
+    font-size:0;
+    animation-name: fadeIn1;
+    animation-duration: 1.5s;
+}
+.banner2 h1 {
+    padding:0;
+    margin: 0;
+    opacity:0;
+    line-height:0;
+    font-size:0;
     animation-name: fadeIn2;
     animation-delay:2.5s;
     animation-duration: 2s;
@@ -140,15 +144,21 @@ section .banner2 h1 {
         display:none;
     }
 }
-@keyframes fadeIn {
+@keyframes fadeIn1 {
     0% {
-        opacity:0;
+        opacity:1;
+        font-size:11vw;
+        line-height:40vh;
     }
     80% {
         opacity:1;
+        font-size:11vw;
+        line-height:40vh;
     }
     100% {
         opacity:0;
+        font-size:11vw;
+        line-height:40vh;
     }
 }
 @keyframes fadeIn2 {
@@ -157,15 +167,18 @@ section .banner2 h1 {
     }
     1% {
         opacity:0;
-        font-size:15vw;
+        font-size:9vw;
+        line-height:40vh;
     }
     15% {
         opacity: 1;
-        font-size:15vw;
+        font-size:9vw;
+        line-height:40vh;
     }
     100% {
         opacity:0;
-        font-size:15vw;
+        font-size:9vw;
+        line-height:40vh;
     }
 }
 nav {

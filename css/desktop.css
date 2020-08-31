@@ -16,7 +16,7 @@
     body {
         background: url('/img/background-design.png');
         background-position: top;
-        background-position-y:-20%;
+        background-position-y:5%;
         background-repeat: no-repeat;
         width:100vw;
         height:200vh;
@@ -67,25 +67,25 @@ section {
     background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
 }
 section h1 {
-    font-size: 15vw;
     font-family:'montserrat';
     color:white;
     text-align:center;
 }
-section .banner {
-    margin:0;
-    padding:0;
-    text-align:center;
-    opacity:0;
-    animation-name: fadeIn;
-    animation-duration: 1.3s;
-}
-section .banner2 {
+.banner h1 {
     padding:0;
     margin: 0;
     opacity:0;
+    line-height:0;
     font-size:0;
-    width:100vw;
+    animation-name: fadeIn1;
+    animation-duration: 1.5s;
+}
+.banner2 h1 {
+    padding:0;
+    margin: 0;
+    opacity:0;
+    line-height:0;
+    font-size:0;
     animation-name: fadeIn2;
     animation-delay:2.5s;
     animation-duration: 2s;
@@ -106,15 +106,21 @@ section .banner2 {
         display:none;
     }
 }
-@keyframes fadeIn {
+@keyframes fadeIn1 {
     0% {
-        opacity:0;
+        opacity:1;
+        font-size:13vw;
+        line-height:50vh;
     }
     80% {
         opacity:1;
+        font-size:13vw;
+        line-height:50vh;
     }
     100% {
         opacity:0;
+        font-size:13vw;
+        line-height:50vh;
     }
 }
 @keyframes fadeIn2 {
@@ -123,15 +129,18 @@ section .banner2 {
     }
     1% {
         opacity:0;
-        font-size:20vw;
+        font-size:11vw;
+        line-height:50vh;
     }
     15% {
         opacity: 1;
-        font-size:20vw;
+        font-size:11vw;
+        line-height:50vh;
     }
     100% {
         opacity:0;
-        font-size:20vw;
+        font-size:11vw;
+        line-height:50vh;
     }
 }
 nav {
@@ -262,11 +271,11 @@ nav {
     font-size:1vw;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
-.textbox-intro a img {
+.textbox-intro a img{
     width:5vw;
 }
 .textbox-intro a:hover {
-	animation:pulsing 1s;
+    animation:pulsing 1s;
 }
 @keyframes pulsing {
 	0%{
@@ -491,148 +500,4 @@ quote{
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 
-/* Doodle Stage */
-#stage {
-    color:rgb(255, 255, 0);
-    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1882231/thAABNY7DY.jpg);
-    /*fixed sizes*/
-    height: 250px;
-    width: 500px;
-    position:relative;
-    overflow:hidden;
-  }
-  #stage:hover #wings img{
-    top:10px;
-  }
-  #stage #wings img{
-    z-index:10;
-    left:30%;
-    top:250px;
-    position:absolute;
-    transition:1s;
-      width:30%;
-  }
-  #stage #smiles img{
-      z-index:10;
-      position:absolute;
-      width:100%;
-      top:-20px;
-      opacity:0.4;
-      animation:flash 1s 7s;
-  }
-  #stage #music img{
-      z-index:40;
-      width:10%;
-      left:-30px;
-      top:120px;
-      position:absolute;
-      animation:pulse 5s ease-in infinite;
-  }
-  #stage #music img{
-      animation-name:move;
-      animation-duration:3.5s;
-      animation-delay:2s;
-  }
-  @keyframes move{
-      0%{transform:translateX(0);opacity:0;}
-      50%{opacity:0;}
-      100%{transform:translateX(550px);opacity:10;}
-  }
-  #stage #notes img{
-      z-index:40;
-      width:10%;
-      left:-30px;
-      top:120px;
-      position:absolute;
-      animation:pulse 5s ease-in infinite;
-  }
-  #stage #notes img{
-      animation-name:slide;
-      animation-duration:3.5s;
-      animation-delay:3s;
-  }
-  @keyframes slide{
-      0%{transform:translateX(0);opacity:0;}
-      50%{opacity:0;}
-      100%{transform:translateX(550px);opacity:10;}
-  }
-  /*GOOGLE TEXT*/
-  #doodle {
-      position: absolute;
-      z-index:10;
-      top: 30%;
-      left: 50%;
-      width: 70%;
-      transform: translate(-50%, -50%);
-  }
-  #doodle path{
-      stroke: #fcee21;
-      fill: black;
-      stroke-dasharray: 400;
-      opacity: 10;
-      animation: animate 5s cubic-bezier(0, 0.23, 1, 0.1);
-  }
-  /*GOOGLE ANIMATION*/
-  @keyframes animate {
-      0% {
-          opacity: 0;
-          fill: none;
-          stroke-dashoffset: 400;
-      }
-      30% {
-          opacity: 10;
-          fill: none;
-          stroke-dashoffset: 400;
-      }
-      90% {
-          fill: rgba(252, 238, 33, 0);
-      }
-      100% {
-          opacity: 10;
-          fill: rgba(252, 238, 33, 1);
-          stroke-dashoffset: 0;
-      }
-  }
-  /*GUITAR STYLES*/
-  #guitar{
-      position:absolute;
-      z-index:30;
-      top: -60px;
-      left:40%;
-      width:20%;
-      animation:strum 2s 1s;
-      animation-fill-mode:forwards;
-  }
-  
-  /*GUITAR ANIMATION*/
-  @keyframes strum {
-      
-      0% {
-          transform:translateY(0);
-      }
-      
-      100% {
-          transform:translateY(250px);
-      }
-      
-  }
-      
-      /*FRONT VIEW COBAIN*/
-  #frontview{
-      position: absolute;
-      z-index:20;
-      top: 50.4%;
-      left:40%;
-      width: 13.5%;
-      animation:center 3s 1s;
-  }
-  /*ANIMATIONS*/
-  @keyframes center{
-          0%{opacity:0;}
-      100%{opacity:10;}
-  }
-
-footer {
-    text-align:center;
-}
 }

@@ -4,6 +4,7 @@
     html{
         background-position: center;
         width:100vw;
+        overflow-x: hidden;
         scroll-behavior: smooth;
         background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
     }
@@ -11,6 +12,7 @@
         background: url('/img/background-design.png');
         background-position: top;
         width:100vw;
+        overflow-x:hidden;
         margin-top:15px;
 
     }
@@ -68,6 +70,7 @@ nav {
     background: rgba(0,0,0,0.8);
     width:100vw;
     height:100vh;
+    margin-bottom:30px;
     position:absolute;
     top:0;
     left:0;

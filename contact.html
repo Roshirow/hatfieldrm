@@ -82,7 +82,7 @@
             <h2>or just leave me a message</h2>
             <div class="social_media">
                 <ul>
-                    <li class="animate__animated animate__bounce"><a href="https://www.instagram.com/roshi_42/"><img src="/img/insta.png" alt="Insta Profile"></a></li>
+                    <li class="animate__animated animate__bounce"><a href="https://www.instagram.com/roshi_42/"><img id="instaicon" src="/img/insta.png" alt="Insta Profile"><img id="instaposts" src="/img/instaposts.jpg" alt="Insta Posts"></a></li>
                     <li class="animate__animated animate__bounce"><a href="https://www.linkedin.com/in/rochell-hatfield-7b02001ab/"><img src="/img/linkedin.png" alt="linkedin profile"></a></li>
                 </ul>
             </div>
@@ -121,9 +121,6 @@
 
     </main>
 
-    <footer>
-        <p>&copy; Copyright 2000 - <span>YEAR</span></p>
-      </footer>
          <!-- jQuery Library via CDN -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -138,17 +135,6 @@
 
     <script src="/js/scripts.js"></script>
 
-<script>
-    // Get Current Year
-var today = new Date();
-// Store Current Year
-var year = today.getFullYear();
-// Check check
-console.log( today, year  );
-
-// Show Current Year
-$('span').text( year );
-</script>
     
 <script>
     var getStuff = 'https://api.thecatapi.com/v1/images/search';
