@@ -5,7 +5,6 @@
         background-position: center;
         width:100vw;
         overflow-x: hidden;
-        scroll-behavior: smooth;
         background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
     }
     body {
@@ -151,6 +150,7 @@ nav {
     flex-direction:row;
     width:100vw;
     justify-content:center;
+    margin-bottom:2vh;
 }
 #packageimg {
     width:40vw;
