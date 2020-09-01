@@ -199,7 +199,13 @@ nav {
 .par-1 {
     display:flex;
     width:100vw;
-    justify-content: flex-end;
+    flex-direction:row;
+    justify-content: center;
+}
+.par-1 img {
+    width:30vw;
+    border-radius:5%;
+    margin:5vw;
 }
 #par-1 {
     margin-right:40px;
@@ -219,7 +225,7 @@ nav {
     justify-content: flex-start;
 }
 #par-2 {
-    margin-left:40px;
+    margin-left:30px;
     padding:30px;
     width:40vw;
     color:white;
@@ -232,13 +238,14 @@ nav {
 }
 #creative_briefs {
     width:60vw;
+    margin-right:30px;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
     justify-content: space-evenly;
 }
 .par-2 img {
-    width:20vw;
+    width:25vw;
     border-radius:5%;
 }
 .par-3 {

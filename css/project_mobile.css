@@ -3,27 +3,24 @@
 @media only screen and (max-width: 768px) {
 
     html{
-        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         width:100vw;
         height:100vh;
-        margin:0;
-        padding:0;
         overflow-x: hidden;
         scroll-behavior: smooth;
         background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
     }
     body {
         background: url('/img/background-design.png');
-        background-position: top;
+        background-position: center;
         background-position-y:-20%;
         background-repeat: no-repeat;
         width:100vw;
         height:100vh;
-        margin:0;
+        margin-right:5px;
+        margin-left:5px;
         margin-top:20px;
-        padding:0;
         overflow-x: hidden;
     }
         .nav,
@@ -296,7 +293,7 @@
 .description {
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items:center;
     width:100vw;
     height:100vh;
@@ -304,18 +301,25 @@
 .description h1 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 5vw;
-    line-height:5vh;
+    font-size: 6vw;
+    line-height:7vh;
     width:10vw;
 }
 
 #notesnapshot {
     width:70vw;
+    border-radius:5%;
 }
 .par-1 {
     display:flex;
     width:100vw;
+    flex-direction:column-reverse;
     justify-content: center;
+    align-items:center;
+}
+.par-1 img {
+    width:90vw;
+    border-radius:5%;
 }
 #par-1 {
     margin:30px;
@@ -328,6 +332,8 @@
 .par-2 {
     display:flex;
     width:100vw;
+    flex-direction:column;
+    align-items:center;
     justify-content: center;
 }
 #par-2 {
@@ -337,6 +343,17 @@
     font-family:'abel', sans-serif;
     font-size: 4vw;
     line-height:4vh;
+}
+#creative_briefs {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#creative_briefs img {
+    width:90vw;
+    margin-bottom:40px;
+    border-radius:5%;
 }
 .par-3 {
     display:flex;
@@ -386,6 +403,17 @@
     font-family:'abel', sans-serif;
     font-size: 4vw;
     line-height:4vh;
+}
+.logo_sketches {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.logo_sketches img {
+    width:90vw;
+    margin-bottom:40px;
+    border-radius:5%;
 }
 #stage {
     display:none;
