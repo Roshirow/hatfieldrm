@@ -402,19 +402,32 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
 	transform: translatey(7px);
 }
-.social_media ul {
-    list-style:none;
+.social_media {
+    display:flex;
+    margin:50px;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
-.social_media ul li {
-    margin:20px;
-}
-.social_media ul li a img {
+#instaicon {
     width:4vw;
+    position:absolute;
+    z-index:2;
+    padding:30px;
 }
-.social_media ul li a img:hover{
-	animation:bounce 1s;
+#instaposts {
+    width:1vw;
+    position:absolute;
+    z-index:2;
+    margin:50px;
+    opacity:0;
 }
-
+#instaposts:hover {
+    opacity:1;
+    width:20vw;
+}
+#link {
+    width:3vw;
+}
 
 
 /*PROJECTS WEBPAGE FOR DESKTOP*/

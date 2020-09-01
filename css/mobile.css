@@ -354,7 +354,8 @@ nav {
 }
 .cats {
     width:30vw;
-    border-radius:10%
+    border-radius:10%;
+    margin-top:50px;
 }
 .contact {
     display:flex;
@@ -404,19 +405,32 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
 	transform: translatey(7px);
 }
-.social_media ul {
+.social_media {
     display:flex;
-    flex-direction:row;
-    list-style:none;
+    margin:50px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
-.social_media ul li {
-    margin:20px;
+#instaicon {
+    width:15vw;
+    z-index:2;
+    position: absolute;
 }
-.social_media ul li a img {
-    width:10vw;
+#instaposts {
+    width:3vw;
+    z-index:3;
+    position: absolute;
+    margin:30px;
+    opacity:0;
 }
-.social_media ul li a img:hover{
-	animation:bounce 1s;
+#instaposts:hover {
+    opacity:1;
+    width:40vw;
+}
+#link {
+    width:13vw;
+    padding:40px;
 }
 
 /*PROJECTS*/
