@@ -222,6 +222,7 @@
 #lightgallery {
     display:flex;
     flex-flow:column wrap;
+    margin-bottom:100px;
 }
 #beerbox_main {
     width:100vw;
@@ -271,7 +272,7 @@
     width:40vw;
 }
 .hearts img {
-    width:10vw;
+    width:8vw;
 }
 #heartlike {
     z-index:3;
