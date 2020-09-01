@@ -221,7 +221,7 @@ nav {
 #par-2 {
     margin-left:40px;
     padding:30px;
-    width:60vw;
+    width:40vw;
     color:white;
     font-family:'abel', sans-serif;
     font-size: 1.5vw;
@@ -229,6 +229,17 @@ nav {
     border-top: 2px solid white;
     border-left:2px solid white;
     border-radius:5px;
+}
+#creative_briefs {
+    width:60vw;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.par-2 img {
+    width:20vw;
+    border-radius:5%;
 }
 .par-3 {
     display:flex;
@@ -282,6 +293,16 @@ nav {
     border-top: 2px solid white;
     border-right:2px solid white;
     border-radius:5px;
+}
+.logo_sketches {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:100vw;
+}
+.logo_sketches img {
+    width:30vw;
+    border-radius: 5%;
 }
 
 
