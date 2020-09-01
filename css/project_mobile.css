@@ -355,6 +355,17 @@
     margin-bottom:40px;
     border-radius:5%;
 }
+#jellyroll {
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:40px;
+}
+#jellyroll img {
+    width:90vw;
+    border-radius:5%;
+}
 .par-3 {
     display:flex;
     width:100vw;
@@ -413,6 +424,17 @@
 .logo_sketches img {
     width:90vw;
     margin-bottom:40px;
+    border-radius:5%;
+}
+.joined {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    margin-bottom:40px;
+}
+.joined img {
+    width:90vw;
     border-radius:5%;
 }
 #stage {

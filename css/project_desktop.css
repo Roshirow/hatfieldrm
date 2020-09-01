@@ -195,6 +195,7 @@ nav {
 }
 #notesnapshot {
     width:50vw;
+    border-radius:5%;
 }
 .par-1 {
     display:flex;
@@ -219,13 +220,24 @@ nav {
     border-right:2px solid white;
     border-radius:5px;
 }
+#jellyroll {
+    width:60vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#jellyroll img {
+    width:50vw;
+    margin-right:10px;
+    border-radius:5%;
+}
 .par-2 {
     display:flex;
     width:100vw;
     justify-content: flex-start;
 }
 #par-2 {
-    margin-left:30px;
+    margin-left:20px;
     padding:30px;
     width:40vw;
     color:white;
@@ -310,6 +322,17 @@ nav {
 .logo_sketches img {
     width:30vw;
     border-radius: 5%;
+}
+.joined {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    margin-bottom:40px;
+}
+.joined img {
+    width:60vw;
+    border-radius:5%;
 }
 
 
