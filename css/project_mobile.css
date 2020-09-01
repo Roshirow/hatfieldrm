@@ -373,6 +373,11 @@
     justify-content:center;
     align-items:center;
 }
+.par-3 img {
+    width:90vw;
+    border-radius:5%;
+    margin-bottom:400px;
+}
 #par-3 {
     color:white;
     font-family:'abel', sans-serif;
@@ -405,6 +410,8 @@
 .par-6 {
     display:flex;
     width:100vw;
+    flex-direction:column-reverse;
+    align-items:center;
     justify-content: center;
 }
 #par-6 {
@@ -414,6 +421,11 @@
     font-family:'abel', sans-serif;
     font-size: 4vw;
     line-height:4vh;
+}
+.par-6 img {
+    width:90vw;
+    border-radius:5%;
+    margin-bottom:30px;
 }
 .logo_sketches {
     display:flex;
