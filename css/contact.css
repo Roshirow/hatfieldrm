@@ -38,9 +38,9 @@
     @keyframes bounce-it {
         0%   { transform:  translateY(0); }
         10%  { transform:  translateY(0); }
-        30%  { transform:  translateY(-30px); }
+        30%  { transform:  translateY(-20px); }
         50%  { transform:  translateY(0); }
-        57%  { transform:  translateY(-7px); }
+        57%  { transform:  translateY(-10px); }
         64%  { transform:  translateY(0); }
         100% { transform:  translateY(0); }
     }
