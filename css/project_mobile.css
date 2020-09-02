@@ -319,7 +319,7 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 .par-2 {
     display:flex;
@@ -333,7 +333,7 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 #creative_briefs {
     display:flex;
@@ -372,26 +372,26 @@
 #par-3 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
     width:90vw;
 }
 .par-3 quote {
     color:rgb(219, 236, 255);
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
     text-align:center;
     width:80vw;
 }
 #par-4 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
     width:90vw;
 }
 #par-5 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
     width:90vw;
 }
 .par-6 {
@@ -406,7 +406,7 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 .par-6 img {
     width:90vw;
