@@ -16,7 +16,6 @@
     body {
         background: url('/img/background-design.png');
         background-position: top;
-        background-position-y:5%;
         background-repeat: no-repeat;
         width:100vw;
         height:200vh;
@@ -25,6 +24,24 @@
         padding:0;
         overflow: hidden;
     }
+    .circle_background{
+        z-index:10;
+        position:absolute;
+        width:50vw;
+    } 
+    #Large_Circle {
+        transform-origin: center;
+		-webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
 .download-resume {
     display:flex;
     justify-content: center;
