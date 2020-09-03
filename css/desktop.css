@@ -260,7 +260,7 @@ nav {
     font-size:1.6vw;
 	line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
-.textbox-intro p {
+.textbox-intro h3 {
     background-color:#9e1a882f;
     border-radius:20px;
     color:white;
@@ -270,24 +270,6 @@ nav {
     font-size:1vw;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
-.textbox-intro a img{
-    width:5vw;
-}
-.textbox-intro a:hover {
-    animation:pulsing 1s;
-}
-@keyframes pulsing {
-	0%{
-		transform:scaleX(1);
-	}
-	50%{
-		transform:scale3d(1.0,1.09,1.09);
-	}
-		100%{
-		transform:scaleX(1);
-	}
-}
-
 .profile-photo {
     display:flex;
     justify-content: center;
@@ -362,6 +344,40 @@ nav {
 		transform:scaleX(1);
 	}
 }
+
+.container {
+    z-index:-10;
+    position:absolute;
+    top:30%;
+  }
+  
+ .container h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: white;
+    letter-spacing: .125em;
+    animation-name: animateText;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    position: relative;
+    left: -99em;
+  }
+ .container h1 span {
+    animation-name: animateColor;
+    animation-duration: 5s;
+    animation-delay: 5s;
+  }
+  @keyframes animateText {
+    0% {left: 30em;opacity: 0}
+    50% {opacity:1}
+    80% {left: 10em;}
+    100% {left: -8em;}
+  }
+  @keyframes animateColor {
+    from {color: white;}
+    to {color: rgb(177, 3, 177);}
+  }
 
 
 /*ABOUT ME WEBPAGE FOR DESKTOP*/

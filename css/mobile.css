@@ -268,7 +268,7 @@ nav {
     font-size:4vw;
 	line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
-.textbox-intro p {
+.textbox-intro h3 {
     background-color:#9e1a882f;
     border-radius:20px;
     color:white;
@@ -277,26 +277,6 @@ nav {
     font-size: 3vw;
     margin-right:50px;
     margin-left:50px;
-}
-.textbox-intro a {
-    width:18vw;
-}
-.textbox-intro a img {
-    width:18vw;
-}
-.textbox-intro a:hover {
-	animation:pulsing 1s;
-}
-@keyframes pulsing {
-	0%{
-		transform:scaleX(1);
-	}
-	50%{
-		transform:scale3d(1.0,1.09,1.09);
-	}
-		100%{
-		transform:scaleX(1);
-	}
 }
 
 .profile-photo {
@@ -346,16 +326,8 @@ nav {
     font-family: 'Montserrat', sans-serif;
     color:rgb(153, 189, 255);
 }
-#cats {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100vw;
-}
-.cats {
-    width:30vw;
-    border-radius:10%;
-    margin-top:50px;
+.circle_background {
+    display:none;
 }
 .contact {
     display:flex;
