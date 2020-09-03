@@ -153,50 +153,39 @@ nav {
 #contact_main {
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:center;
+    margin-top:40px;
 }
 .contact_header {
     display:flex;
     flex-direction:column;
-    margin-top:10px;
+    margin:20px;
 }
 .contact_header h1 {
     font-size:2.5vw;
-    text-align:center;
+    text-align:left;
     font-family:'abel', sans-serif;
     color:white;
 }
 .contact_header h2 {
-    margin:5px;
-    font-size:1.5vw;
+    margin:10px;
+    font-size:1.2vw;
     font-family: 'Montserrat', sans-serif;
     color:white;
+    text-align:left;
 }
 .contact_header h3 {
     margin:5px;
-    font-size:1vw;
+    font-size:1.3vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
-    text-align:center;
+    text-align:left;
     font-family: 'Montserrat', sans-serif;
     color:rgb(153, 189, 255);
 }
-#cats {
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-.cats {
-    width:20vw;
-    border-radius:10%
-}
 .contact {
     display:flex;
-    justify-content:flex-start;
-}
-.contact * {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+    justify-content:center;
+    align-items:center;
 }
 .contact input {
     display:flex;
@@ -237,10 +226,9 @@ input[type="submit"]:active {
 	transform: translatey(7px);
 }
 .social_media {
-    display:flex;
     margin:50px;
-    justify-content: flex-end;
-    align-items: flex-end;
+    z-index:2;
+    position:absolute;
 }
 #instaicon {
     width:4vw;
@@ -261,5 +249,6 @@ input[type="submit"]:active {
 }
 #link {
     width:3vw;
+    margin:40px;
 }
 }
