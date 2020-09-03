@@ -257,18 +257,16 @@ nav {
     font-family: 'montserrat';
     text-align:left;
     width:45vw;
-    font-size:1.6vw;
+    font-size:2.2vw;
 	line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .textbox-intro h3 {
-    background-color:#9e1a882f;
-    border-radius:20px;
     color:white;
     font-family:'montserrat';
     text-align:left;
     width:45vw;
-    font-size:1vw;
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    font-size:1.6vw;
+	line-height: 6vh;
 }
 .profile-photo {
     display:flex;
@@ -295,6 +293,123 @@ nav {
   }
 }
 
+.textbox-intro h3 span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #6b969d;
+    -webkit-animation: rotateWord 18s ease-in-out infinite 0s;
+    -ms-animation: rotateWord 18s ease-in-out infinite 0s;
+    animation: rotateWord 18s ease-in-out infinite 0s;
+  }
+.textbox-intro h3 span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  
+  .textbox-intro h3 span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+  
+  .textbox-intro h3 span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+  }
+  
+  .textbox-intro h3 span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+  }
+@-webkit-keyframes rotateWord {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 0;
+      -webkit-transform: translateY(-30px);
+    }
+    5% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+    }
+    17% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+    }
+    20% {
+      opacity: 0;
+      -webkit-transform: translateY(30px);
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-ms-keyframes rotateWord {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 0;
+      -ms-transform: translateY(-30px);
+    }
+    5% {
+      opacity: 1;
+      -ms-transform: translateY(0px);
+    }
+    17% {
+      opacity: 1;
+      -ms-transform: translateY(0px);
+    }
+    20% {
+      opacity: 0;
+      -ms-transform: translateY(30px);
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes rotateWord {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 0;
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    5% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    17% {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    20% {
+      opacity: 0;
+      -webkit-transform: translateY(30px);
+      transform: translateY(30px);
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 /*PROJECTS WEBPAGE FOR DESKTOP*/
 #aboutme_main{
@@ -352,35 +467,38 @@ nav {
   }
   
  .container h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'impact';
     font-weight: 700;
-    font-size: 3em;
-    color: white;
-    letter-spacing: .125em;
+    font-size: 8em;
+    opacity:0;
+    color:  #9E1A89;
+    letter-spacing: .128em;
     animation-name: animateText;
-    animation-timing-function: ease-in-out;
-    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
     position: relative;
-    left: -99em;
+    left: -3em;
   }
  .container h1 span {
     animation-name: animateColor;
     animation-duration: 5s;
-    animation-delay: 5s;
+    animation-delay: 1s;
   }
   @keyframes animateText {
-    0% {left: 30em;opacity: 0}
+    0% {left: 20em;opacity: 0}
     50% {opacity:1}
-    80% {left: 10em;}
-    100% {left: -8em;}
+    100% {left: -20em;}
   }
   @keyframes animateColor {
-    from {color: white;}
+    from {color:  #9E1A89;}
     to {color: rgb(177, 3, 177);}
   }
 
 
 /*ABOUT ME WEBPAGE FOR DESKTOP*/
+
+
 .about_hiking{
     display: flex;
     flex-direction:row;
@@ -412,5 +530,78 @@ quote{
     font-size: 1.6vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
+
+.aboutme-rh {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  .aboutme-rh span {
+    text-transform: uppercase;
+    display: block; 
+  }
+  
+  .text1 {
+      font-family:'montserrat';
+    color: white;
+    opacity:0;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation-name: text;
+    animation-duration: 5s;
+  }
+  
+  .text2 {
+    font-family:'montserrat';
+    font-size: 40px;
+    color: #9E1A89;
+    opacity:0;
+    animation-name: animateColor;
+    animation-duration: 2s;
+    animation-delay: 3s;
+  }
+  
+  @keyframes text {
+    0% {
+        opacity:0;
+      color: #9E1A89;
+      margin-bottom: -40px;
+    }
+    30% {
+        opacity:1;
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+    60% {
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+    }
+    80% {
+        margin-bottom:20px;
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+  }
+  @keyframes animateColor {
+    0% {
+        opacity:0;
+    }
+    90% {
+        color: white;
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+  }
 
 }
