@@ -7,9 +7,7 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     width:100vw;
-    height:100vh;
     margin:0;
-    padding:0;
     overflow-x: hidden;
     scroll-behavior: smooth;
     background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
@@ -20,10 +18,8 @@ body {
     background-position-y:-20%;
     background-repeat: no-repeat;
     width:100vw;
-    height:100vh;
     margin:0;
     margin-top:20px;
-    padding:0;
     overflow-x: hidden;
 }
     .nav,
@@ -228,64 +224,55 @@ nav {
 #index1_main,
 #index_main {
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin-top:20px;
+    flex-direction:row;
+    margin-top:10px;
 }
  #index1_main .profile-photo {
     display:flex;
     justify-content: center;
-    align-items: flex-start;
-    width:100vw;
-    height:100vh;
+    align-items: center;
+    width:45vw;
 }
  #index1_main .profile-photo img {
-    width:50vw;
-    height:auto;
+    width:45vw;
     margin-top:20px;
     border-radius:20px;
  }
 .textbox-intro {
     display:flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    width:100vw;
+    width:50vw;
+    margin-left:20px;
 }
 .textbox-intro h1{
     color:white;
     font-family:'montserrat';
-    text-align:center;
+    text-align:left;
     font-size:8vw;
 }
 .textbox-intro h2 {
     color:white;
     font-family: 'montserrat';
-    text-align:center;
-    font-size:4vw;
+    text-align:left;
+    font-size:3.5vw;
 	line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .textbox-intro h3 {
     color:white;
     font-family:'montserrat';
-    text-align:center;
-    font-size: 3vw;
+    text-align:left;
+    font-size: 3.4vw;
 }
 .container {
     display:none;
 }
 .profile-photo {
     display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    width:50vw;
-    height:100vh;
+    width:45vw;
 }
 .profile-photo img {
-    width:30vw;
+    width:45vw;
     height:auto;
-    margin-top:60px;
     border-radius:20px;
 }
 .textbox-intro h3 span {
@@ -420,19 +407,20 @@ nav {
     align-items:center;
 }
 .contact_header h1 {
-    font-size:8vw;
+    margin:1px;
+    font-size:5vw;
     font-family:'abel', sans-serif;
     color:white;
 }
 .contact_header h2 {
-    margin:5px;
-    font-size:5vw;
+    margin:1px;
+    font-size:2.3vw;
     font-family: 'Montserrat', sans-serif;
     color:white;
 }
 .contact_header h3 {
     margin:5px;
-    font-size:3.5vw;
+    font-size:2.5vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:center;
     font-family: 'Montserrat', sans-serif;
@@ -449,11 +437,12 @@ nav {
 .contact * {
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:center;
 }
 .contact input {
     display:flex;
-    align-items:center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .contact p{
     font-family: "Abel", sans-serif;
@@ -473,7 +462,7 @@ input[type="submit"] {
     padding-bottom:0.5em;
     padding-right:1em;
     padding-left:1em;
-    margin: 2.3em 0 0 0;
+    margin: 1em 0 0 0;
 	border-radius: 7px;
 	font-size: 1.4em;
 	cursor: pointer;
@@ -575,7 +564,6 @@ input[type="submit"]:active {
 .about_hiking{
     display: flex;
     flex-direction:column;
-    margin-bottom:200px;
 }
 #hikingimages {
     width:100vw;
@@ -587,14 +575,14 @@ input[type="submit"]:active {
     width:100vw;
 }
 #hikingimages img{
-    width:100vw;
+    width:60vw;
     margin:10px;
 }
 #hikingtext p{
     margin:20px;
     color:white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.4vw;
+    font-size: 3vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .aboutme-rh {
@@ -668,7 +656,27 @@ input[type="submit"]:active {
         opacity:0;
     }
   }
-
+.myinterests {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.myinterests h1 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size:5vw;
+}
+.myinterests h2 {
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size:3vw;
+    font-weight: 300;
+}
+.myinterests img {
+    width:50vw;
+    margin-top:30px;
+}
 
 
 

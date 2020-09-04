@@ -6,10 +6,9 @@
         background-position: center;
         background-repeat: no-repeat;
         width:100vw;
-        height:200vh;
         margin:0;
         padding:0;
-        overflow: hidden;
+        overflow-x: hidden;
         scroll-behavior: smooth;
         background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
     }
@@ -18,11 +17,10 @@
         background-position: top;
         background-repeat: no-repeat;
         width:100vw;
-        height:200vh;
         margin:0;
         margin-top:15px;
         padding:0;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 .download-resume {
     display:flex;
@@ -516,13 +514,6 @@ nav {
     width:35vw;
     margin:10px;
 }
-quote{
-    margin:20px;
-    font-family: 'dancing script', cursive;
-    color:lightseagreen;
-    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
-	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
-}
 #hikingtext p{
     margin:20px;
     color:white;
@@ -603,29 +594,41 @@ quote{
   }
   .myinterests {
       display:flex;
-      width:50vw;
-      flex-direction:column;
-      align-items:center;
+      width:100vw;
+      flex-direction:row;
+      align-items: flex-start;
+      justify-content:space-around;
+  }
+  #myinterests {
+    margin-top:20px;
   }
   .myinterests h1 {
-      font-size:1.5vw;
+      font-size:2vw;
       font-family:'montserrat';
       color:white;
       width:30vw;
   }
   .myinterests h2 {
-      font-size:1.1vw;
+      font-size:1.5vw;
       line-height:2.8vh;
       font-family:'montserrat';
       color:white;
-      width:25vw;
+      width:27vw;
       padding:10px;
       border-top: 1px solid white;
       border-left:1px solid white;
       border-radius:2px;
   }
+  .myinterests p {
+    margin-left:30px;
+    width:50vw;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+  }
   #framework {
-      width:10vw;
+      width:30vw;
   }
 
 }
