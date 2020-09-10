@@ -19,6 +19,16 @@
         overflow: hidden;
         cursor: url(/img/cursor-01.png), auto;
     }
+    h1,
+h2,
+h3,
+h4,
+p:hover {
+  cursor: url(/img/cursor-03.png), auto;
+}
+img:hover {
+  cursor: url(/img/cursor-02.png), auto;
+}
     .circle_background{
         z-index:-1;
         position:absolute;
@@ -120,6 +130,7 @@ nav {
 }
 .nav-links li a:hover {
     color:rgba(255, 192, 203, 0.815);
+    cursor: url(/img/cursor-02.png), auto;
 }
 .download-resume {
     display:flex;
@@ -139,7 +150,8 @@ nav {
 }
 
 .download-resume a:hover{
-	animation:pulse 1s;
+    animation:pulse 1s;
+    cursor: url(/img/cursor-02.png), auto;
 }
 @keyframes pulse{
 	0%{
@@ -224,7 +236,8 @@ input[type="submit"] {
     float:right;
 }
 input[type="submit"]:hover {
-	transform: translatey(3px);
+    transform: translatey(3px);
+    cursor: url(/img/cursor-02.png), auto;
 }
 input[type="submit"]:active {
 	transform: translatey(7px);
