@@ -2,6 +2,8 @@
 
 @media only screen and (min-width: 769px) {
     html{
+        scroll-behavior: smooth;
+        overflow-y: scroll;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

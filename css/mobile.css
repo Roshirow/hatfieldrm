@@ -3,6 +3,8 @@
 @media only screen and (max-width: 768px) {
 
 html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
