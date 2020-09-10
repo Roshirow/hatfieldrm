@@ -21,32 +21,35 @@
     .circle_background{
         z-index:-1;
         position:absolute;
-        width:60vw;
-        top: 55%;
-        left: 50%;
+        width:80vw;
+        top: 70%;
+        left: 43%;
         transform: translate(-50%, -50%);
     } 
     #Top_Triangle,
     #Center_Triangle,
     #Bottom_Triangle {
         animation-name:bounce-it;
-        animation-duration: 2s;
+        animation-duration: 5s;
         transform-origin: bottom;
         animation-iteration-count: infinite;
         animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
     }
     @keyframes bounce-it {
         0%   { transform:  translateY(0); }
-        10%  { transform:  translateY(0); }
-        30%  { transform:  translateY(-20px); }
+        10%   { transform:skewY(-1deg); }
+        20%  { transform:  translateY(0); }
+        30%  { transform:skewY(1deg); }
         50%  { transform:  translateY(0); }
-        57%  { transform:  translateY(-10px); }
-        64%  { transform:  translateY(0); }
-        100% { transform:  translateY(0); }
+        60% { transform:  translateY(0); }
+        70%   { transform:  translateY(0); }
+        80%   { transform:skewY(-1deg); }
+        90%  { transform:  translateY(0); }
+        100%  { transform:skewY(1deg); }
     }
     #Large_Circle {
         transform-origin: center;
-		-webkit-animation: rotation 5s infinite linear;
+		-webkit-animation: rotation 20s infinite linear;
 }
 
 @-webkit-keyframes rotation {
@@ -248,7 +251,7 @@ input[type="submit"]:active {
     width:30vw;
 }
 #link {
-    width:3vw;
+    width:4vw;
     margin:40px;
 }
 }
