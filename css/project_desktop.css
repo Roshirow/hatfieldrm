@@ -13,6 +13,7 @@
         width:100vw;
         overflow-x:hidden;
         margin-top:15px;
+        cursor: url(/img/cursor-01.png), auto;
 
     }
 .download-resume {

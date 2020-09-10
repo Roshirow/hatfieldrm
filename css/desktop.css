@@ -21,6 +21,7 @@
         margin-top:15px;
         padding:0;
         overflow-x: hidden;
+        cursor: url(/img/cursor-01.png), auto;
     }
 .download-resume {
     display:flex;

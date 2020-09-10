@@ -17,6 +17,7 @@
         width:100vw;
         height:150vh;
         overflow: hidden;
+        cursor: url(/img/cursor-01.png), auto;
     }
     .circle_background{
         z-index:-1;
@@ -49,7 +50,7 @@
     }
     #Large_Circle {
         transform-origin: center;
-		-webkit-animation: rotation 20s infinite linear;
+		-webkit-animation: rotation 25s infinite linear;
 }
 
 @-webkit-keyframes rotation {
