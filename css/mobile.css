@@ -226,14 +226,15 @@ nav {
     display:flex;
     flex-direction:row;
     margin-top:10px;
+    width:100vw;
 }
- #index1_main .profile-photo {
+.profile-photo {
     display:flex;
     justify-content: center;
     align-items: center;
     width:45vw;
 }
- #index1_main .profile-photo img {
+.profile-photo img {
     width:45vw;
     margin-top:20px;
     border-radius:20px;
@@ -265,15 +266,6 @@ nav {
 }
 .container {
     display:none;
-}
-.profile-photo {
-    display:flex;
-    width:45vw;
-}
-.profile-photo img {
-    width:45vw;
-    height:auto;
-    border-radius:20px;
 }
 .textbox-intro h3 span {
     position: absolute;
