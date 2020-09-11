@@ -259,6 +259,9 @@ button {
     font-size: calc(10px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
+.contact input:hover {
+    cursor: url(/img/cursor-03.png), auto;
+}
 input[type="submit"] {
 	background-image: linear-gradient(
 		to left,
@@ -274,7 +277,7 @@ input[type="submit"] {
     margin: 2.3em 0 0 0;
 	border-radius: 7px;
 	font-size: 1.4em;
-	cursor: pointer;
+	cursor: url(/img/cursor-02.png), auto;
 	color: #ffffff;
 	outline: none;
 	border: none;
