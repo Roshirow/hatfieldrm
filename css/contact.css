@@ -179,6 +179,15 @@ nav {
     flex-direction:column;
     margin:20px;
 }
+.contact_header a{
+    color:rgb(153, 189, 255);
+    text-decoration-line: none;
+}
+.contact_header a:hover {
+    cursor: url(/img/cursor-02.png), auto;
+    color:rgb(106, 152, 236);
+    font-size:1.35vw;
+}
 .contact_header h1 {
     font-size:2.5vw;
     text-align:left;
