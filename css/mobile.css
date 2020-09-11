@@ -424,7 +424,7 @@ nav {
 }
 .contact_header h3 {
     margin:5px;
-    font-size:2.5vw;
+    font-size:4.5vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:center;
     font-family: 'Montserrat', sans-serif;
@@ -436,7 +436,7 @@ nav {
     border-image: none;
     background-color: #9e1a8800;
     margin:5px;
-    font-size:1.3vw;
+    font-size:3.5vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:left;
     font-family: 'Montserrat', sans-serif;
@@ -465,7 +465,7 @@ button {
     padding-left:0.5em;
     margin: 0.01em 0 0 0;
 	border-radius: 5px;
-	font-size: 0.1em;
+	font-size: 0.6em;
 	color: #ffffff;
 	outline: none;
 	border: none;
@@ -521,9 +521,15 @@ input[type="submit"]:active {
 	transform: translatey(7px);
 }
 .social_media {
-    margin:5px;
     z-index:2;
     position:absolute;
+    top: 50%;
+    left: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+}
+.social_media img:hover {
+    cursor: url(/img/cursor-02.png), auto;
 }
 #instaicon {
     width:10vw;
@@ -532,10 +538,11 @@ input[type="submit"]:active {
     padding:30px;
 }
 #instaposts {
-    width:3vw;
+    width:4vw;
     position:absolute;
     z-index:2;
-    margin:50px;
+    margin-top:50px;
+    margin-left:45px;
     opacity:0;
 }
 #instaposts:hover {
@@ -543,8 +550,8 @@ input[type="submit"]:active {
     width:80vw;
 }
 #link {
-    width:7vw;
-    margin:40px;
+    width:13vw;
+    margin-left:27px;
 }
 
 /*PROJECTS*/
