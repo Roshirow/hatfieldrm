@@ -558,7 +558,6 @@ input[type="submit"]:active {
 #aboutme_main{
     margin-top:10px;
     width:100vw;
-    height:100vh;
 }
 .about_projects {
     width:100vw;
@@ -738,14 +737,4 @@ input[type="submit"]:active {
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
   }
 
-
-
-/* Doodle Stage */
-#stage {
-    display:none;
-  }
- 
-footer {
-    text-align:center;
-}
 }

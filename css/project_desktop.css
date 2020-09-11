@@ -214,14 +214,14 @@ nav {
     justify-content: center;
 }
 .par-1 img {
-    width:30vw;
+    width:40vw;
     border-radius:5%;
     margin:5vw;
 }
 #par-1 {
     margin-right:40px;
     padding:30px;
-    width:60vw;
+    width:50vw;
     color:white;
     font-family:'abel', sans-serif;
     font-size: 1.5em;
@@ -308,25 +308,24 @@ nav {
 .par-6 {
     display:flex;
     width:100vw;
-    justify-content: center;
-    align-items:center;
     flex-direction:row;
+    justify-content: center;
+}
+.par-6 img {
+    width:40vw;
+    border-radius:5%;
+    margin:5vw;
 }
 #par-6 {
-    margin-right:30px;
+    margin-right:40px;
     padding:30px;
-    width:60vw;
+    width:50vw;
     color:white;
     font-family:'abel', sans-serif;
     font-size: 1.5em;
     border-top: 2px solid white;
     border-right:2px solid white;
     border-radius:5px;
-}
-.par-6 img {
-    width:40vw;
-    border-radius:5%;
-    margin-left:30px;
 }
 .logo_sketches {
     display:flex;
