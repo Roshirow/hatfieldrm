@@ -107,9 +107,12 @@
         
         <div class="contact_header">
             <h1>Contact Me!</h1>
-            <h3>rhatfield@eagles.ewu.edu<br><a href="tel:5419753810">(541)975-3810</a></h3>
-            <h2>or just leave me a message</h2>
+            <h3><a href="tel:5419753810">(541)975-3810</a></h3>
+                        <!-- The text field -->
+<input type="text" value="rhatfield@eagles.ewu.edu" id="myInput">
 
+<!-- The button used to copy the text -->
+<button onclick="myFunction()">Copy text</button>
         </div>
 
 
@@ -201,6 +204,24 @@ $('#lightbox').click(function(){
 $('#lightbox').toggleClass('showLightbox');
 
 });
+</script>
+
+
+<script>
+    function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied to Clipboard");
+}
 </script>
 </body>
 </html>

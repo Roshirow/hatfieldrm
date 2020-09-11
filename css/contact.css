@@ -194,13 +194,6 @@ nav {
     font-family:'abel', sans-serif;
     color:white;
 }
-.contact_header h2 {
-    margin:10px;
-    font-size:1.2vw;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-    text-align:left;
-}
 .contact_header h3 {
     margin:5px;
     font-size:1.3vw;
@@ -208,6 +201,48 @@ nav {
     text-align:left;
     font-family: 'Montserrat', sans-serif;
     color:rgb(153, 189, 255);
+}
+#myInput {
+    appearance: none;
+    border-style: none;
+    border-image: none;
+    background-color: #9e1a8800;
+    margin:5px;
+    font-size:1.3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
+    text-align:left;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(153, 189, 255);
+    transition: 0.3s linear;
+}
+#myInput:hover {
+    cursor: url(/img/cursor-02.png), auto;
+    transform: translatey(3px);
+}
+button:hover {
+    cursor: url(/img/cursor-02.png), auto;
+    transform: translatey(-3px);
+}
+button {
+	background-image: linear-gradient(
+		to left,
+		rgba(153, 189, 255, 0.75) 0%,
+		rgba(255, 65, 230, 0.86) 100%
+	);
+	box-shadow: 0 9px 25px -8px rgb(153, 189, 255);
+    font-family: "Abel", sans-serif;
+    padding-top: 0.1em;
+    padding-bottom:0.1em;
+    padding-right:0.1em;
+    padding-left:0.1em;
+    margin: 0.01em 0 0 0;
+	border-radius: 10px;
+	font-size: 0.8em;
+	color: #ffffff;
+	outline: none;
+	border: none;
+    transition: 0.3s linear;
+    float:right;
 }
 .contact {
     display:flex;
