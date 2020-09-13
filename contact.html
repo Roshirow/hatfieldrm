@@ -157,27 +157,6 @@
     <!-- My Scripts -->
 
     <script src="/js/scripts.js"></script>
-
-    
-<script>
-    var getStuff = 'https://api.thecatapi.com/v1/images/search';
-
-var setStuff = {};
-
-var doStuff = function(data){
-  
- showStuff (data);
-  
-};
-
-$.getJSON( getStuff, setStuff, doStuff);
-
-var showStuff = function(data) {console.log(data[0].url);
-                                
-                                $('.cats').attr( 'src' , data[0].url  );
-                                
-       }
-</script>
     
 <script>
     // BEHAVIOR
@@ -205,7 +184,6 @@ $('#lightbox').toggleClass('showLightbox');
 
 });
 </script>
-
 
 <script>
     function myFunction() {
