@@ -355,6 +355,13 @@ nav {
     width:100vw;
     margin-bottom:40px;
 }
+.github p {
+    text-align:center;
+    font-size: 1em;
+    color:white;
+    font-family: "Abel", sans-serif;
+    margin:20px;
+}
 .github button {
     background-image: linear-gradient(
 		to bottom,
@@ -367,7 +374,7 @@ nav {
     padding-bottom:0.5em;
     padding-right:1em;
     padding-left:1em;
-    margin: 2.3em 0 0 0;
+    margin: 2.3em;
 	border-radius: 7px;
 	font-size: 1em;
 	cursor: url(/img/cursor-02.png), auto;
@@ -377,7 +384,8 @@ nav {
     transition: 0.3s linear;
     float:right;
 }
-.github button:hover {
+.github button,
+.github a:hover {
     transform: translatey(3px);
     cursor: url(/img/cursor-02.png), auto;
 }
