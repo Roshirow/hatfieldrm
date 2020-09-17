@@ -67,84 +67,13 @@ img:hover {
 		transform:scaleX(1);
 	}
 }
-.logo-animation {
-  width:40vw;
-  z-index:100;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-.logo-animation svg g#left_deco {
-  animation-name:go;
-  animation-duration: 3.3s;
-  transform-origin: center;
-  animation-delay: 4s;
-  opacity:0;
-}
-@keyframes go {
-  0%{
-      opacity:1;
-      transform:scale(0);
-      transform-origin: center;
-      
-  }
-  70%{
-      opacity:1;
-      transform:scale(1) rotate(720deg) rotateY(180deg);
-      transform-origin: center;
-  }
-  85%{
-      opacity:1;
-      transform:scale(1) rotate(720deg) rotateY(180deg);
-      transform-origin: center;
-  }
-}
-.logo-animation svg g#top_of_R,
-.logo-animation svg g#tail_of_R,
-.logo-animation svg g#top_of_H,
-.logo-animation svg g#leg_of_H {
-  animation-name:go-up;
-  animation-duration: 3.3s;
-  animation-delay: 4s;
-  opacity:0;
-}
-@keyframes go-up {
-  0% {
-      opacity:1;
-      transform: scale(0,0);
-      transform-origin: center;
-  }
-  55% {
-      transform: scale(1);
-      transform-origin: bottom;
-  }
-  56% {
-      transform:translateY(0);
-  }
-  65% {
-      transform: translateY(-20px);
-  }
-  70% {
-      transform: translateY(0);
-  }
-  80% {
-      transform: translateY(-15px);
-      opacity:1;
-  }
-  85% {
-      transform: translateY(0);
-      opacity:1;
-  }
-}
 section {
 width:0vw;
 height:0vh;
 z-index:5;
 position:absolute;
 animation-name: fadeIn-background;
-animation-duration: 8.25s;
+animation-duration: 5s;
 opacity:0;
 background: radial-gradient(96.88% 248% at 3.13% 96%, #4C0F29 0%, #9E1A89 64.58%, #4C0F29 100%);
 }
