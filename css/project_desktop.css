@@ -232,7 +232,7 @@ nav {
     display:flex;
     justify-content:center;
     align-items:center;
-    
+
 }
 #jellyroll img {
     width:50vw;
@@ -388,7 +388,30 @@ nav {
     transform: translatey(3px);
     cursor: url(/img/cursor-02.png), auto;
 }
-
+.top{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width:100vw;
+}
+.top a{
+    margin:30px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    background-color: rgb(4, 192, 196);
+    border-radius: 15px;
+}
+.top a:hover {
+    font-size:1.51em;
+    cursor: url(/img/cursor-02.png), auto;
+}
 
 
 footer {
