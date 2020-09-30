@@ -482,6 +482,7 @@ nav {
   }
   
  .container h1 {
+   text-align: center;
     font-family: 'impact';
     font-weight: 700;
     font-size: 8em;
@@ -495,19 +496,10 @@ nav {
     position: relative;
     left: -3em;
   }
- .container h1 span {
-    animation-name: animateColor;
-    animation-duration: 5s;
-    animation-delay: 1s;
-  }
   @keyframes animateText {
     0% {left: 20em;opacity: 0}
     50% {opacity:1}
     100% {left: -20em;}
-  }
-  @keyframes animateColor {
-    from {color:  #9E1A89;}
-    to {color: rgb(177, 3, 177);}
   }
 
 

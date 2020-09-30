@@ -239,6 +239,17 @@ nav {
     margin-right:10px;
     border-radius:5%;
 }
+.par-2 #jellyroll {
+    margin-right:40px;
+    padding:30px;
+    width:50vw;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 1.5em;
+    border-top: 2px solid white;
+    border-left:2px solid white;
+    border-radius:5px;
+}
 .par-2 {
     display:flex;
     width:100vw;
@@ -385,7 +396,7 @@ nav {
 }
 .github button,
 .github a:hover {
-    transform: translatey(3px);
+    transform: scale(1.1);
     cursor: url(/img/cursor-02.png), auto;
 }
 .top{
@@ -395,21 +406,20 @@ nav {
     width:100vw;
 }
 .top a{
+    width:40px;
     margin:30px;
     padding-right:10px;
     padding-left:10px;
     padding-top:5px;
     padding-bottom:5px;
     text-decoration: none;
-    color:white;
-    font-size: 1.5em;
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
-    background-color: rgb(4, 192, 196);
-    border-radius: 15px;
+}
+.top a img {
+    width:40px;
+    height:30px;
 }
 .top a:hover {
-    font-size:1.51em;
+    transform: scale(1.2);
     cursor: url(/img/cursor-02.png), auto;
 }
 

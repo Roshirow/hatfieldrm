@@ -356,6 +356,13 @@
     width:90vw;
     border-radius:5%;
 }
+.par-2 #jellyroll {
+    margin:30px;
+    width:100vw;
+    color:white;
+    font-family:'abel', sans-serif;
+    font-size: 1.2em;
+}
 .par-3 {
     display:flex;
     width:100vw;
@@ -434,7 +441,70 @@
     width:90vw;
     border-radius:5%;
 }
-#stage {
-    display:none;
+.github {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    margin-bottom:40px;
+}
+.github p {
+    text-align:center;
+    font-size: 1em;
+    color:white;
+    font-family: "Abel", sans-serif;
+    margin:20px;
+}
+.github button {
+    background-image: linear-gradient(
+		to bottom,
+		rgb(0, 0, 0) 0%,
+		rgb(0, 0, 0) 100%
+	);
+	box-shadow: 0 9px 25px -5px #000000;
+    font-family: "Abel", sans-serif;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+    padding-right:1em;
+    padding-left:1em;
+    margin: 2.3em;
+	border-radius: 7px;
+	font-size: 1em;
+	cursor: url(/img/cursor-02.png), auto;
+	color: white;
+	outline: none;
+	border: none;
+    transition: 0.3s linear;
+    float:right;
+}
+.github button,
+.github a:hover {
+    transform: scale(1.1);
+    cursor: url(/img/cursor-02.png), auto;
+}
+.top{
+    margin-top: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+.top a{
+    width:40px;
+    margin:30px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-decoration: none;
+}
+.top a img {
+    width:40px;
+    height:30px;
+}
+.top a:hover {
+    transform: scale(1.2);
+    cursor: url(/img/cursor-02.png), auto;
 }
 }
