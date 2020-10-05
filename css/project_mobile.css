@@ -318,7 +318,8 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .par-2 {
     display:flex;
@@ -332,7 +333,8 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 #creative_briefs {
     display:flex;
@@ -361,7 +363,8 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .par-3 {
     display:flex;
@@ -378,26 +381,30 @@
 #par-3 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     width:90vw;
 }
 .par-3 quote {
     color:rgb(219, 236, 255);
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:center;
     width:80vw;
 }
 #par-4 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     width:90vw;
 }
 #par-5 {
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     width:90vw;
 }
 .par-6 {
@@ -412,7 +419,8 @@
     width:100vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.2em;
+    font-size: 3vw;
+    line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .par-6 img {
     width:90vw;
