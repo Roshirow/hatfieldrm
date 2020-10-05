@@ -340,8 +340,9 @@ nav {
 .logo_sketches {
     display:flex;
     flex-direction:row;
-    justify-content:space-evenly;
-    width:100vw;
+    justify-content:flex-start;
+    width:90vw;
+    margin:30px;
 }
 .logo_sketches img {
     width:30vw;
@@ -398,6 +399,28 @@ nav {
 .github a:hover {
     transform: scale(1.1);
     cursor: url(/img/cursor-02.png), auto;
+}
+.heatmap {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    width:90vw;
+    margin:30px;
+}
+.heatmap img {
+    width:40vw;
+    border-radius:5%;
+}
+.google {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    width:90vw;
+    margin:30px;
+}
+.google img {
+    width:70vw;
+    border-radius: 5%;
 }
 .top{
     display:flex;
