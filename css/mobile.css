@@ -665,5 +665,7 @@ input[type="submit"]:active {
     font-size: 3vw;
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
   }
-
+  #information {
+    opacity:0;
+}
 }
