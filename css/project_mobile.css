@@ -537,4 +537,7 @@
     transform: scale(1.2);
     cursor: url(/img/cursor-02.png), auto;
 }
+#information {
+    opacity:0;
+}
 }

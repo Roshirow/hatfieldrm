@@ -317,4 +317,7 @@ input[type="submit"]:active {
     width:4vw;
     margin:40px;
 }
+#information {
+    opacity:0;
+}
 }

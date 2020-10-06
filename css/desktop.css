@@ -568,5 +568,7 @@ nav {
   #framework {
       width:30vw;
   }
-
+  #information {
+    opacity:0;
+}
 }
