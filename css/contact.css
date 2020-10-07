@@ -180,12 +180,12 @@ nav {
     margin:20px;
 }
 .contact_header a{
-    color:rgb(153, 189, 255);
+    color:rgb(242, 247, 255);
     text-decoration-line: none;
 }
 .contact_header a:hover {
     cursor: url(/img/cursor-02.png), auto;
-    color:rgb(106, 152, 236);
+    color:rgb(220, 232, 255);
     font-size:1.35vw;
 }
 .contact_header h1 {
@@ -200,7 +200,7 @@ nav {
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:left;
     font-family: 'Montserrat', sans-serif;
-    color:rgb(153, 189, 255);
+    color:rgb(248, 251, 255);
 }
 #myInput {
     appearance: none;
@@ -212,7 +212,7 @@ nav {
     line-height: calc(1.5em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:left;
     font-family: 'Montserrat', sans-serif;
-    color:rgb(153, 189, 255);
+    color:rgb(248, 251, 255);
     transition: 0.3s linear;
 }
 #myInput:hover {
@@ -224,12 +224,6 @@ button:hover {
     transform: translatey(-3px);
 }
 button {
-	background-image: linear-gradient(
-		to left,
-		rgba(153, 189, 255, 0.75) 0%,
-		rgba(255, 65, 230, 0.86) 100%
-	);
-	box-shadow: 0 9px 25px -8px rgb(153, 189, 255);
     font-family: "Abel", sans-serif;
     padding-top: 0.1em;
     padding-bottom:0.1em;
@@ -238,7 +232,7 @@ button {
     margin: 0.01em 0 0 0;
 	border-radius: 10px;
 	font-size: 0.8em;
-	color: #ffffff;
+	color: #d100b5;
 	outline: none;
 	border: none;
     transition: 0.3s linear;
@@ -263,12 +257,6 @@ button {
     cursor: url(/img/cursor-03.png), auto;
 }
 input[type="submit"] {
-	background-image: linear-gradient(
-		to left,
-		rgba(255, 119, 40, 0.75) 0%,
-		rgba(255, 65, 230, 0.86) 100%
-	);
-	box-shadow: 0 9px 25px -5px #ff5f15;
     font-family: "Abel", sans-serif;
     padding-top: 0.5em;
     padding-bottom:0.5em;
@@ -278,7 +266,7 @@ input[type="submit"] {
 	border-radius: 7px;
 	font-size: 1.4em;
 	cursor: url(/img/cursor-02.png), auto;
-	color: #ffffff;
+    color: #d100b5;
 	outline: none;
 	border: none;
     transition: 0.3s linear;

@@ -222,7 +222,8 @@ nav {
     width:50vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     border-top: 2px solid white;
     border-right:2px solid white;
     border-radius:5px;
@@ -245,7 +246,8 @@ nav {
     width:50vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     border-top: 2px solid white;
     border-left:2px solid white;
     border-radius:5px;
@@ -261,7 +263,8 @@ nav {
     width:40vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     border-top: 2px solid white;
     border-left:2px solid white;
     border-radius:5px;
@@ -294,12 +297,14 @@ nav {
     width:60vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .par-3 quote {
     color:rgb(219, 236, 255);
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     text-align:center;
     width:40vw;
 }
@@ -307,13 +312,15 @@ nav {
     width:60vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 #par-5 {
     width:60vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 }
 .par-6 {
     display:flex;
@@ -332,7 +339,8 @@ nav {
     width:50vw;
     color:white;
     font-family:'abel', sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     border-top: 2px solid white;
     border-right:2px solid white;
     border-radius:5px;
@@ -368,7 +376,8 @@ nav {
 }
 .github p {
     text-align:center;
-    font-size: 1.5em;
+    font-size: 2vw;
+    line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
     color:white;
     font-family: "Abel", sans-serif;
     margin:20px;
